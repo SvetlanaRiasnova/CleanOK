@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CLEANOK</title>
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@700&family=Yanone+Kaffeesatz&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@700&family=Roboto:wght@400;500&family=Yanone+Kaffeesatz&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <div class="logo">CLEANOK</div>
+        <div class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link link">Клиенты</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link link">Услуги</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link link">Сертификаты</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link link">Контакты</a>
+            </li>
+          </ul>
+          <div class="nav__burger">
+            <a href="#" class="nav__link link">
+              <div class="burger">
+                <span class="burger burger__one"></span>
+                <span class="burger burger__tow"></span>
+                <span class="burger burger__three"></span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="intro container">
+      <div class="intro__descr">
+        <div>
+          <span class="intro__header"
+            >Техническая эксплуатация <br />и содержание недвижимости</span
+          >
+          <p class="intro__text">
+            Забота о вашей недвижимости на регулярной и разовой основе.
+            Отставьте заявку и наш менеджер свяжется с вами
+          </p>
+          <form>
+            <button class="intro__btn">
+              <a href="#call" class="intro__btn">Заказать звонок</a>
+            </button>
+          </form>
+        </div>
+        <div class="intro__features">
+          <p>
+            Более <a href="#" class="city">60 городов </a><br />по Дальнему
+            Востоку
+          </p>
+          <!-- 60 городов гиперссылка -->
+          <p>Более 1 000 объектов <br />на обслуживании</p>
+          <p>Более 500 тыс. м<sup>2</sup> обслуживаемых территорий</p>
+          <!-- степень -->
+        </div>
+      </div>
+      <div class="intro__image">
+        <img src="./src/img/main_img.jpg" alt="clean room" />
+      </div>
+    </div>
+    <div class="clients container">
+      <span class="cliens__ourclients">Наши клиенты</span>
+      <h2>Нам доверяют</h2>
+      <div class="clients__logo">
+        <img src="./src/icons/clients/mts.png" alt="MTS" />
+        <img src="./src/icons/clients/rzd.png" alt="RGD" />
+        <img src="./src/icons/clients/vtb24.png" alt="VTB" />
+        <img src="./src/icons/clients/sber.png" alt="Sber" />
+        <img src="./src/icons/clients/vostbank.png" alt="Vostochnyi" />
+        <img src="./src/icons/clients/tele2.png" alt="TELE2" />
+        <img src="./src/icons/clients/siemens.png" alt="Siemens" />
+        <img src="./src/icons/clients/russianstandart.png" alt="RussStand" />
+        <img src="./src/icons/clients/russiapost.png" alt="russian post" />
+        <img src="./src/icons/clients/museum.png" alt="Museum" />
+        <img src="./src/icons/clients/posudacentr.png" alt="PosudaCentr" />
+        <img src="./src/icons/clients/gerb.png" alt="gerb" />
+        <img src="./src/icons/clients/dvbank.png" alt="DV bank" />
+        <img src="./src/icons/clients/dvtamog.png" alt="DVTU" />
+        <img src="./src/icons/clients/deer.png" alt="deer" />
+        <img src="./src/icons/clients/atb.png" alt="ATB" />
+        <img src="./src/icons/clients/megafon.png" alt="Megafon" />
+        <img src="./src/icons/clients/rosbank.png" alt="Rosbank" />
+        <img src="./src/icons/clients/vivea.png" alt="Vivea" />
+        <img src="./src/icons/clients/baltica.png" alt="Baltica" />
+      </div>
+    </div>
+    <section class="servises container">
+      <span>услуги</span>
+      <h2>Берем на себя заботу о вашей недвижимости</h2>
+      <div></div>
+      <!-- Грид из номера услуги и описания -->
+      <div></div>
+      <!-- карточка сервиса с ссылками -->
+    </section>
+    <div class="sertificates">
+      <span>сертификаты и рекомендации</span>
+      <h2>Мы подтвеждаем компетенцию</h2>
+      <div class="sertificates__slider"></div>
+      <!--  слайдер с сертификатами гиперссылки -->
+    </div>
+    <div class="map">
+      <div>
+        <img src="./src/img/Map.jpg" alt="map" />
+      </div>
+      <div class="search">
+        <form action="">
+          <img src="./src/img/Search.jpg" alt="" />
+          <!-- форма поиска офиса -->
+        </form>
+      </div>
+    </div>
+    <section class="Action">
+      <a id="call"></a>
+      <div>
+        <span>оставьте заявку</span>
+        <h2>Напишите нам</h2>
+        <article>
+          С 2009 года создаем чистоту на объектах. Подбираем график с учетом
+          пожеланий клиента. Экономим время, деньги и даем отличный результат за
+          счет использования профессиональной техники, экологически безопасных
+          средств, регулярного обучения персонала и оптимизации процесса.
+          Заполните форму, мы свяжемся с вами в ближайшее время, обсудим задачи
+          и предложим оптимальное решение.
+        </article>
+      </div>
+      <div>
+        <form action=""></form>
+      </div>
+    </section>
+    <footer class="footer">
+      <div>
+        <div class="logo">CLEANOK</div>
+        <p>
+          ООО «Клин Ок» — клининговая компания на Дальнем Востоке Данные
+          юридического лица компании ОГРН, КПП г. Хабаровск, ул. Серышева, 56
+        </p>
+      </div>
+      <div class="footer__contacts">
+        <p>Единая справочная служба</p>
+        <p>по России звонок бесплатный</p>
+        <p>8 800 333 99 09</p>
+      </div>
+    </footer>
+  </body>
+</html>
