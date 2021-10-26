@@ -1,11 +1,20 @@
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .container {
   width: 1440px;
   margin: 0 auto;
+}
+
+h2 {
+  font-family: Yanone Kaffeesatz;
+  font-size: 35px;
+  line-height: 35px;
+  letter-spacing: 0.01em;
+  color: #041133;
+  opacity: 0.8;
 }
 
 .header__container {
@@ -14,11 +23,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .logo {
@@ -36,8 +45,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 480px;
 }
 
@@ -53,8 +62,8 @@
   list-style: none;
   width: 390px;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .nav__burger {
@@ -85,9 +94,9 @@
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 1fr;
-  grid-template-rows: 1fr;
+      grid-template-rows: 1fr;
 }
 
 .intro__descr {
@@ -122,8 +131,8 @@
 .intro__btn {
   width: 180px;
   height: 50px;
-  background-color: #ff785f;
-  color: #ffffff;
+  background-color: #FF785F;
+  color: #FFFFFF;
   font-family: Roboto;
   font-weight: 500;
   font-size: 16px;
@@ -140,10 +149,11 @@
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
   grid-column-gap: 75px;
+  grid-row-gap: 10px;
   font-family: Roboto;
   font-size: 16px;
   line-height: 25px;
@@ -152,12 +162,12 @@
 }
 
 sup {
-  font-size: 8px;
+  font-size: 10px;
 }
 
 .city {
   text-decoration: none;
-  color: #6783fe;
+  color: #6783FE;
 }
 
 .clients {
@@ -166,16 +176,20 @@ sup {
   margin-top: 62px;
 }
 
-.cliens__ourclients {
+.clients__descr {
   font-family: Roboto;
-  font-style: normal;
   font-weight: bold;
   font-size: 11px;
   line-height: 13px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: #6783fe;
+  color: #6783FE;
   opacity: 0.8;
+}
+
+.clients__header {
+  margin-top: 20px;
+  text-align: center;
 }
 
 .clients__logo {
@@ -183,16 +197,21 @@ sup {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 1020.85px;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
   -webkit-column-gap: 45px;
-  column-gap: 45px;
+          column-gap: 45px;
   row-gap: 30px;
   margin-top: 45px;
+}
+
+.servises__descr {
+  margin-top: 70px;
+  font-size: 60px;
 }
 /*# sourceMappingURL=style.css.map */
