@@ -1,7 +1,7 @@
 .service-four
     display: grid
     grid-template-columns: 50% auto
-    margin-left: 60px
+    margin-left: 50px
     min-height: 390px
     p
         font-family: Roboto
@@ -16,6 +16,7 @@
     display: grid
     grid-template-columns: 1fr 1fr
     grid-template-rows: auto
+    grid-column-gap: 60px
     .icon
         display: flex
         justify-content: center
@@ -25,11 +26,14 @@
 /**     подогнать под перфек пиксель согласно макету, оптимизировать код **/
 
 .service-four__list
-    background-color: #F4F8FB
+    background-color: #f8fafb
+    border-radius: 5px
     padding-left: 46px
+
     .title-one
         margin-top: 60px
     .content
         margin-top: 70px
         p
             margin-top: 24px
+            padding-right: 50px

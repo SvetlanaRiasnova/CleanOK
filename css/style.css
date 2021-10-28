@@ -445,7 +445,7 @@ sup {
   display: grid;
   -ms-grid-columns: 50% auto;
       grid-template-columns: 50% auto;
-  margin-left: 60px;
+  margin-left: 50px;
   min-height: 390px;
 }
 
@@ -469,6 +469,7 @@ sup {
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
+  grid-column-gap: 60px;
 }
 
 .service-four__wrapper .icon {
@@ -486,7 +487,8 @@ sup {
 
 /**     подогнать под перфек пиксель согласно макету, оптимизировать код **/
 .service-four__list {
-  background-color: #F4F8FB;
+  background-color: #f8fafb;
+  border-radius: 5px;
   padding-left: 46px;
 }
 
@@ -500,5 +502,6 @@ sup {
 
 .service-four__list .content p {
   margin-top: 24px;
+  padding-right: 50px;
 }
 /*# sourceMappingURL=style.css.map */
