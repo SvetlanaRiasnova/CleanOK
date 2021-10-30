@@ -14,7 +14,8 @@
         "../sass/_service_card4.sass",
         "../sass/_service_card5.sass",
         "../sass/_modal.sass",
-        "../sass/_sertificates.sass"
+        "../sass/_sertificates.sass",
+        "../sass/_swiper.sass"
     ],
     "names": [],
     "file": "style.css"
