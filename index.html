@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -19,6 +19,7 @@
       href="https://fonts.googleapis.com/css2?family=Dosis:wght@700&family=Roboto:wght@400;500&family=Yanone+Kaffeesatz&display=swap"
       rel="stylesheet"
     />
+    <script src="./main.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -40,7 +41,7 @@
             </li>
           </ul>
           <div class="nav__burger">
-            <a href="#" class="nav__link link">
+            <a href="#modalOpen" class="nav__link link">
               <div class="burger">
                 <span class="burger burger-one"></span>
                 <span class="burger burger-tow"></span>
@@ -135,7 +136,7 @@
         </div>
         <!-- Грид из номера услуги и описания -->
         <div class="services__content">
-          <div class="service-one hidden">
+          <div class="service-one ">
             <div>
               <div class="title-one">Ежедневная уборка</div>
               <div class="content-one">
@@ -228,7 +229,7 @@
             <div class="service-three__img">
             </div>
           </div>
-          <div class="service-four">
+          <div class="service-four hidden">
             <div class="service-four__container">
               <span class="title-one">Обслуживаемые системы</span>
               <div class="service-four__wrapper">
@@ -278,13 +279,68 @@
       </div>
     </section>
     <div class="sertificates">
-      <span>сертификаты и рекомендации</span>
-      <h2>Мы подтвеждаем компетенцию</h2>
-      <div class="sertificates__slider"></div>
+      <div class="sertificates__wrapper">
+        <div class="sert__title">
+          <span class="sertificates__descr">сертификаты и рекомендации</span>
+          <h2 class="sertificates__header">Мы подтвеждаем компетенцию</h2>
+        </div>
+        <div class="sertificates__swiper">
+          <div class="swiper">
+              <div class="swiper__wrapper">
+                <div class="swiper_card">
+                  <a href="#">
+                    <img src="./src/icons/PDFSertificat.png" alt="sertificate" class="swiper__img">
+                  </a>
+                  <span class="swiper__descr">Сертификат</span>
+                  <h2 class="swiper__header">Veleda Professional</h2>
+                  <p class="swiper__content">Обучение по курсу <br>
+                    “Специалист”</p>
+                </div>
+                <div class="swiper_card">
+                  <a href="#">
+                    <img src="./src/icons/PDFSertificat.png" alt="sertificate" class="swiper__img">
+                  </a>
+                  <span class="swiper__descr">Сертификат</span>
+                  <h2 class="swiper__header">Gansow Gmatic AG</h2>
+                  <p class="swiper__content">Курс по эксплуатации, <br>обслуживанию и ремонту<br>
+                  поломоечных машин Gmatic</p>
+                </div>
+                <div class="swiper_card">
+                  <a href="#">
+                    <img src="./src/icons/PDFSertificat.png" alt="sertificate" class="swiper__img">
+                  </a>
+                  <span class="swiper__descr">Сертификат</span>
+                  <h2 class="swiper__header">Columbus Reinigungsmaschinen</h2>
+                  <p class="swiper__content">CleanOk — официальный дилер<br>
+                  и сервисный центр</p>
+                </div>
+                <div class="swiper_card">
+                  <a href="#">
+                    <img src="./src/icons/PDFSertificat.png" alt="sertificate" class="swiper__img">
+                  </a>
+                  <span class="swiper__descr">Сертификат</span>
+                  <h2 class="swiper__header">Veleda Professional</h2>
+                  <p class="swiper__content">Официальный дистрибьютор<br>
+                  торговой марки</p>
+                </div>
+              </div>
+            <!-- <div class="swiper_arrows"> -->
+              <div class="swiper__arrows">
+                <div class="arrow-left">
+                <img src="./src/icons/arrow-left.png" alt="">
+                </div>
+                <div class="arrow-right">
+                  <img src="./src/icons/arrow-right.png" alt="">
+                </div>
+              </div>
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>
       <!--  слайдер с сертификатами гиперссылки -->
     </div>
-    <div class="map">
-      <div>
+    <div class="offices">
+      <div class="map">
         <img src="./src/img/Map.jpg" alt="map" />
       </div>
       <div class="search">
@@ -326,5 +382,9 @@
         <p>8 800 333 99 09</p>
       </div>
     </footer>
+    <div id="modalOpen" class="modal">
+        <a href="#close" title="Закрыть" class="close">X</a>
+        
+    </div>
   </body>
 </html>
