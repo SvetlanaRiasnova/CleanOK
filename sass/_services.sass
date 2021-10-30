@@ -21,25 +21,19 @@
     justify-content: space-between
 .services__list
     width: 303px
-    height: 385px
-
+    display: flex
+    flex-direction: column
 .services__list button
     display: grid
-    grid-template-columns: 1fr auto
-    grid-column-gap: 10px
+    grid-template-columns: 20% auto
     background-color: inherit
     color: black
-    padding: 22px 16px
-    width: 100%
+    padding: 17px 0px
     border: none
     outline: none
     text-align: left
     cursor: pointer
     transition: 0.3s
-.services__list button:hover
-    color: #6783FE
-.services__list button.active
-    text-color: #6783FE
 
 .list-number
     font-family: Yanone Kaffeesatz
@@ -47,6 +41,7 @@
     line-height: 35px
     letter-spacing: 0.01em
     color: #041133
+    opacity: 0.4
 .list-header
     font-family: Roboto
     font-weight: 500
@@ -57,6 +52,13 @@
     letter-spacing: 0.02em
     color: #041133
     opacity: 0.4
+.services__list button.active
+    .list-number
+        color: #6783FE
+        opacity: 1
+    .list-header
+        color: #6783FE
+        opacity: 1
 .services__content
     width: 807px
     min-height: 390px

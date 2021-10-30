@@ -249,19 +249,23 @@ sup {
 
 .services__list {
   width: 303px;
-  height: 385px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .services__list button {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr auto;
-      grid-template-columns: 1fr auto;
-  grid-column-gap: 10px;
+  -ms-grid-columns: 20% auto;
+      grid-template-columns: 20% auto;
   background-color: inherit;
   color: black;
-  padding: 22px 16px;
-  width: 100%;
+  padding: 17px 0px;
   border: none;
   outline: none;
   text-align: left;
@@ -270,20 +274,13 @@ sup {
   transition: 0.3s;
 }
 
-.services__list button:hover {
-  color: #6783FE;
-}
-
-.services__list button.active {
-  text-color: #6783FE;
-}
-
 .list-number {
   font-family: Yanone Kaffeesatz;
   font-size: 35px;
   line-height: 35px;
   letter-spacing: 0.01em;
   color: #041133;
+  opacity: 0.4;
 }
 
 .list-header {
@@ -300,6 +297,16 @@ sup {
   letter-spacing: 0.02em;
   color: #041133;
   opacity: 0.4;
+}
+
+.services__list button.active .list-number {
+  color: #6783FE;
+  opacity: 1;
+}
+
+.services__list button.active .list-header {
+  color: #6783FE;
+  opacity: 1;
 }
 
 .services__content {
@@ -522,6 +529,46 @@ sup {
 .hidden {
   visibility: hidden;
   display: none;
+}
+
+.service-five {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% auto;
+      grid-template-columns: 50% auto;
+  width: 807px;
+  min-height: 390px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 29px;
+}
+
+.service-five__info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 1fr;
+      grid-template-columns: 20% 1fr;
+  -ms-grid-rows: (60px)[4];
+      grid-template-rows: repeat(4, 60px);
+  margin-top: 90px;
+  width: 280px;
+}
+
+.title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: rgba(4, 17, 51, 0.7);
+}
+
+.service-five__img {
+  width: 358px;
+  background: url(../src/img/Service5.jpg) no-repeat center;
+  border-radius: 5px;
 }
 
 .modal {
