@@ -22,9 +22,25 @@
 .services__list
     width: 303px
     height: 385px
+
+.services__list button
     display: grid
-    grid-template-columns: 1fr 80%
-    align-items: center
+    grid-template-columns: 1fr auto
+    grid-column-gap: 10px
+    background-color: inherit
+    color: black
+    padding: 22px 16px
+    width: 100%
+    border: none
+    outline: none
+    text-align: left
+    cursor: pointer
+    transition: 0.3s
+.services__list button:hover
+    color: #6783FE
+.services__list button.active
+    text-color: #6783FE
+
 .list-number
     font-family: Yanone Kaffeesatz
     font-size: 35px

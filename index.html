@@ -116,27 +116,36 @@
       </h2>
       <div class="services__info">
         <div class="services__list">
-          <a href="#" class="nav__link">   <!-- then click goes blue and chandge card -->
+          <button class="tablinks" onclick="openService(event, 'service-one')" id="defaultOpen">    <!-- then click goes blue and chandge card -->
             <div class="list-number">01</div></a>
-          <div class="list-header">
+            <div class="list-header">
             Содержание внутренних помещений и территорий
-          </div>
-          <a href="#" class="nav__link"><div class="list-number">02</div></a>
-          <div class="list-header">
+            </div>
+          </button>
+          <button class="tablinks" onclick="openService(event, 'service-tow')">
+            <div class="list-number">02</div></a>
+            <div class="list-header">
             Управление и эксплуатация коммерческой недвижимости и в сфере ЖКХ
-          </div>
-          <a href="#" class="nav__link"><div class="list-number">03</div></a>
-          <div class="list-header">Хозяйственное <br />обслуживание</div>
-          <a href="#" class="nav__link"><div class="list-number">04</div></a>
-          <div class="list-header">
-            Техническое обслуживание инженерных систем
-          </div>
-          <a href="#" class="nav__link"><div class="list-number">05</div></a>
-          <div class="list-header">Поддержка материально- технической базы</div>
+            </div>
+          </button>
+          <button class="tablinks" onclick="openService(event, 'service-three')">
+            <div class="list-number">03</div>
+            <div class="list-header">Хозяйственное обслуживание</div>
+          </button>
+          <button class="tablinks" onclick="openService(event, 'service-four')">
+            <div class="list-number">04</div>
+            <div class="list-header">
+              Техническое обслуживание инженерных систем
+            </div>
+          </button>
+          <button class="tablinks" onclick="openService(event, 'service-four')">
+            <div class="list-number">05</div>
+            <div class="list-header">Поддержка материально- технической базы</div>
+          </button>
         </div>
         <!-- Грид из номера услуги и описания -->
         <div class="services__content">
-          <div class="service-one ">
+          <div id="service-one" class="service-one tabcontent">
             <div>
               <div class="title-one">Ежедневная уборка</div>
               <div class="content-one">
@@ -180,7 +189,7 @@
               </div>
             </div>
           </div>
-          <div class="service-tow hidden">
+          <div id="service-tow" class="service-tow tabcontent">
             <div class="service-tow__info ">
               <div>
                 <div class="title-tow">
@@ -205,7 +214,7 @@
               <!-- <img src="./src/img/Service2.jpg" alt="servise" /> -->
             </div>
           </div>
-          <div class="service-three hidden">
+          <div id="service-three" class="service-three tabcontent">
             <div class="service-three__info ">
               <div>
                 <div class="title-three">
@@ -229,7 +238,7 @@
             <div class="service-three__img">
             </div>
           </div>
-          <div class="service-four hidden">
+          <div  id="service-four"  class="service-four tabcontent">
             <div class="service-four__container">
               <span class="title-one">Обслуживаемые системы</span>
               <div class="service-four__wrapper">
@@ -272,6 +281,9 @@
                 механизмов;</p>
               <p>Планово-предупредительные работы.</p></div>
             </div>
+          </div>
+          <div  id="service-five"  class="service-five tabcontent">
+            
           </div>
         </div>
         <!-- карточка сервиса с ссылками -->
