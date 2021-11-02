@@ -20,6 +20,7 @@
       rel="stylesheet"
     />
     <script src="./js/main.js" defer></script>
+    <script src="./js/swiper.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -317,10 +318,10 @@
           <span class="sertificates__descr">сертификаты и рекомендации</span>
           <h2 class="sertificates__header">Мы подтвеждаем компетенцию</h2>
         </div>
-        <div class="sertificates__swiper">
-          <div class="swiper">
-              <div class="swiper__wrapper">
-                <div class="swiper_card">
+        <div class="sertificates wrapper">
+          <div class="slider-container">
+              <div class="slider-track">
+                <div class="slider-item">
                   <a href="#">
                     <img src="./src/icons/PDFSertificat.png" alt="sertificate" class="swiper__img">
                   </a>
@@ -329,7 +330,7 @@
                   <p class="swiper__content">Обучение по курсу <br>
                     “Специалист”</p>
                 </div>
-                <div class="swiper_card">
+                <div class="slider-item">
                   <a href="#">
                     <img src="./src/icons/PDFSertificat.png" alt="sertificate" class="swiper__img">
                   </a>
@@ -338,7 +339,7 @@
                   <p class="swiper__content">Курс по эксплуатации, <br>обслуживанию и ремонту<br>
                   поломоечных машин Gmatic</p>
                 </div>
-                <div class="swiper_card">
+                <div class="slider-item">
                   <a href="#">
                     <img src="./src/icons/PDFSertificat.png" alt="sertificate" class="swiper__img">
                   </a>
@@ -347,7 +348,7 @@
                   <p class="swiper__content">CleanOk — официальный дилер<br>
                   и сервисный центр</p>
                 </div>
-                <div class="swiper_card">
+                <div class="slider-item">
                   <a href="#">
                     <img src="./src/icons/PDFSertificat.png" alt="sertificate" class="swiper__img">
                   </a>
@@ -356,17 +357,20 @@
                   <p class="swiper__content">Официальный дистрибьютор<br>
                   торговой марки</p>
                 </div>
+                <div class="slider-item">слайд 5</div>
+                <div class="slider-item">слайд 6</div>
+                <div class="slider-item">слайд 7</div>
+                <div class="slider-item">слайд 8</div>
               </div>
             <!-- <div class="swiper_arrows"> -->
-              <div class="swiper__arrows">
-                <div class="arrow-left">
-                <img src="./src/icons/arrow-left.png" alt="">
-                </div>
-                <div class="arrow-right">
-                  <img src="./src/icons/arrow-right.png" alt="">
-                </div>
-              </div>
-            <!-- </div> -->
+            <div class="slider-buttons">
+              <button class="btn-prev">
+                <!-- <img src="./src/icons/arrow-left.png" alt="arrow-left"> -->
+              </button>
+              <button class="btn-next">
+                <img src="./src/icons/arrow-right.png" alt="arrow-right">
+              </button>
+          </div>
           </div>
         </div>
       </div>
