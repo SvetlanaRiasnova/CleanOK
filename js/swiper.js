@@ -45,7 +45,6 @@
 		btnPrev.disabled = position === 0;
 		btnNext.disabled = position<= - (itemsCount - slidesToShow) * itemWidth;
 		
-		
 	};
 
 	checkBtns ();
