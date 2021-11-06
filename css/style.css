@@ -906,7 +906,81 @@ sup {
   height: 305px;
   margin-top: 170px;
   margin-left: 82px;
-  background: pink;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  opacity: 0.5;
+  border: 1px solid #E0E3F0;
+  border-radius: 3px;
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  color: #041133;
+  opacity: 0.5;
+}
+
+.client_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.client_info input {
+  padding-left: 15px;
+  width: 171px;
+  height: 40px;
+}
+
+#scompany {
+  margin-top: 20px;
+  padding-left: 15px;
+  width: 362px;
+  height: 40px;
+}
+
+.client__messege {
+  margin-top: 20px;
+  width: 362px;
+  min-height: 115px;
+}
+
+.client__messege .smess {
+  width: 362px;
+  min-height: 115px;
+}
+
+.client__messege textarea {
+  padding-top: 15px;
+  padding-left: 15px;
+}
+
+.action__btn {
+  margin-top: 20px;
+  background: #6783FE;
+  border-radius: 3px;
+  width: 362px;
+  height: 50px;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  cursor: pointer;
 }
 
 .footer {
@@ -923,7 +997,6 @@ sup {
   height: 244px;
   margin-top: 74px;
   background: #E0E3F0;
-  opacity: 0.5;
 }
 
 .footer__info {
@@ -943,5 +1016,38 @@ sup {
 .footer__info .footer__content {
   margin-top: 22px;
   margin-left: -8px;
+  opasity: 1;
+}
+
+.footer__contacts {
+  margin-right: 154px;
+  margin-top: 68px;
+}
+
+.footer__contacts_text {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 2px;
+  letter-spacing: 0.02em;
+}
+
+.footer__contacts_info {
+  font-family: Roboto;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(4, 17, 51, 0.7);
+}
+
+.footer__contacts_phone {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+  color: #6783FE;
+  margin-top: 20px;
 }
 /*# sourceMappingURL=style.css.map */

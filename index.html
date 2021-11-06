@@ -493,17 +493,15 @@
       <div class="action">
         <form action="#"  method="post" class="action__form">
           <div class="form__wrapper">
-          <input type="text" id="sname" placeholder="Ваше имя" />
-          <input
-                type="phone"
-                id="sphone"
-                placeholder="+7 ("
-                pattern="([0-9]{3}[ -][0-9]{3}[ -][0-9]{4})"
-              />
-          <input type="text" id="scompany" placeholder="Наименование компании" />
-          <label for="smassage">Напишите, о чем нам нужно знать</label>
-                  <textarea class="smess" name="smassage" id="smassege" cols="30" rows="10"></textarea>
-          <button class="action__btn" type="button">Заказать звонок</button>
+            <div class="client_info">
+              <input type="text" id="sname" placeholder="Ваше имя" />
+              <input type="phone" id="sphone" placeholder="+7 ("pattern="([0-9]{3}[ -][0-9]{3}[ -][0-9]{4})"/>
+            </div>
+            <input type="text" id="scompany" placeholder="Наименование компании" />
+            <div class="client__messege">
+              <textarea class="smess" name="smassage" id="smassege" cols="47" rows="6" placeholder="Напишите, о чем нам нужно знать"></textarea>
+            </div>
+            <button class="action__btn" type="button">Заказать звонок</button>
           </div>
         </form>
       </div>
@@ -517,9 +515,9 @@
         </p>
       </div>
       <div class="footer__contacts">
-        <p>Единая справочная служба</p>
-        <p>по России звонок бесплатный</p>
-        <p>8 800 333 99 09</p>
+        <p class="footer__contacts_text" >Единая справочная служба</p>
+        <p class="footer__contacts_info">по России звонок бесплатный</p>
+        <p class="footer__contacts_phone">8 800 333 99 09</p>
       </div>
     </footer>
     <div id="modalOpen" class="modal">
