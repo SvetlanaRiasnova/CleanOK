@@ -906,7 +906,7 @@ sup {
   height: 305px;
   margin-top: 170px;
   margin-left: 82px;
-  border: none;
+  border: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -914,8 +914,6 @@ sup {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  opacity: 0.5;
-  border: 1px solid #E0E3F0;
   border-radius: 3px;
   font-family: Roboto;
   font-size: 14px;
@@ -942,6 +940,18 @@ sup {
   padding-left: 15px;
   width: 171px;
   height: 40px;
+}
+
+input, textarea:focus {
+  outline: 0 !important;
+}
+
+input:focus {
+  outline: 2px solid #6783FE !important;
+}
+
+.smess:focus {
+  outline: 2px solid #6783FE !important;
 }
 
 #scompany {
@@ -981,6 +991,8 @@ sup {
   letter-spacing: 0.02em;
   color: #FFFFFF;
   cursor: pointer;
+  border: none;
+  opacity: 1;
 }
 
 .footer {
@@ -997,6 +1009,7 @@ sup {
   height: 244px;
   margin-top: 74px;
   background: #E0E3F0;
+  opacity: 0.5;
 }
 
 .footer__info {

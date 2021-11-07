@@ -35,11 +35,9 @@
     height: 305px
     margin-top: 170px
     margin-left: 82px
-    border: none
+    border: 0px
     display: flex
     flex-direction: column
-    opacity: 0.5
-    border: 1px solid #E0E3F0
     border-radius: 3px
     font-family: Roboto
     font-size: 14px
@@ -57,6 +55,12 @@
         padding-left: 15px
         width: 171px
         height: 40px
+input,textarea:focus
+    outline: 0 !important
+input:focus
+    outline: 2px solid #6783FE !important
+.smess:focus
+    outline: 2px solid #6783FE !important
 #scompany
     margin-top: 20px
     padding-left: 15px
@@ -87,3 +91,5 @@
     letter-spacing: 0.02em
     color: #FFFFFF
     cursor: pointer
+    border: none
+    opacity: 1
