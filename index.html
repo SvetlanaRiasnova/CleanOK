@@ -44,15 +44,13 @@
               <a href="#" class="nav__link link">Контакты</a>
             </li>
           </ul>
-          <div class="nav__burger">
-            <a href="#modalOpen" class="nav__link link">
+          <button type="button" class="nav__burger">
               <div class="burger">
-                <span class="burger burger-one"></span>
-                <span class="burger burger-tow"></span>
-                <span class="burger burger-three"></span>
+                <hr class="burger burger-one"></hr>
+                <hr class="burger burger-tow"></hr>
+                <hr class="burger burger-three"></hr>
               </div>
-            </a>
-          </div>
+          </button>
         </div>
       </div>
       <div class="float-nav">
@@ -60,7 +58,7 @@
           <div class="logo">CLEANOK</div>
           <form>
             <button href="#action" class="intro__btn-float">
-              Заказать звонок</a>
+              Заказать звонок
             </button>
           </form>
           <div class="nav">
@@ -78,15 +76,13 @@
                 <a href="#" class="nav__link link">Контакты</a>
               </li>
             </ul>
-            <div class="nav__burger">
-              <a href="#modalOpen" class="nav__link link">
-                <div class="burger">
-                  <span class="burger burger-one"></span>
-                  <span class="burger burger-tow"></span>
-                  <span class="burger burger-three"></span>
-                </div>
-              </a>
-            </div>
+            <button type="button" class="nav__burger">
+              <div class="burger">
+                <hr class="burger burger-one"></hr>
+                <hr class="burger burger-tow"></hr>
+                <hr class="burger burger-three"></hr>
+              </div>
+            </button>
           </div>
         </div>
       </div>
@@ -471,9 +467,41 @@
         <img src="./src/img/Map.jpg" alt="map" />
       </div>
       <div class="search">
-        <form action="">
-         
-          <!-- форма поиска офиса -->
+        <form action="get" class="cities">
+          <div class="city__searche">
+          <input class="city__name" placeholder="Введите свой город для поиска"></input>
+          <button class="serche__btn" type="button"></button>
+          </div>
+          <ul class="city_list">
+            <li class="city_item">
+
+            </li>
+            <li class="city_item">
+
+            </li>
+            <li class="city_item">
+
+            </li>
+            <li class="city_item">
+
+            </li>
+            <li class="city_item">
+
+            </li>
+            <li class="city_item">
+
+            </li>
+            <li class="city_item">
+
+            </li>
+            <li class="city_item">
+
+            </li>
+            <li class="city_item">
+
+            </li>
+          </ul>
+          <div class="footer__info"></div>
         </form>
       </div>
     </div>
@@ -507,19 +535,21 @@
         </form>
       </div>
     </section>
-    <footer class="footer container">
-      <div class="footer__info">
-        <div class="logo">CLEANOK</div>
-        <p class="footer__content">
-          ООО «Клин Ок» — клининговая компания на Дальнем Востоке Данные
-          юридического лица компании ОГРН, КПП <br>г. Хабаровск, ул. Серышева, 56
-        </p>
-      </div>
-      <div class="footer__contacts">
-        <p class="footer__contacts_text" >Единая справочная служба</p>
-        <p class="footer__contacts_info">по России звонок бесплатный</p>
-        <p class="footer__contacts_phone">8 800 333 99 09</p>
-      </div>
+    <footer class="footer">
+      <container class="footer__wrapper container">
+        <div class="footer__info">
+          <div class="logo">CLEANOK</div>
+          <p class="footer__content">
+            ООО «Клин Ок» — клининговая компания на Дальнем Востоке Данные
+            юридического лица компании ОГРН, КПП <br>г. Хабаровск, ул. Серышева, 56
+          </p>
+        </div>
+        <div class="footer__contacts">
+          <p class="footer__contacts_text" >Единая справочная служба</p>
+          <p class="footer__contacts_info">по России звонок бесплатный</p>
+          <p class="footer__contacts_phone">8 800 333 99 09</p>
+        </div>
+      </container>
     </footer>
     <form action="#" class="modal hidden">
       <div class="nav">
