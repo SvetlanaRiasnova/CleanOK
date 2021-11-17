@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./normalize.css" />
     <link rel="stylesheet" href="./css/textpage.css" />
+    
     <link
       href="https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap"
       rel="stylesheet"
@@ -18,6 +19,8 @@
       href="https://fonts.googleapis.com/css2?family=Dosis:wght@700&family=Roboto:wght@400;500&family=Yanone+Kaffeesatz&display=swap"
       rel="stylesheet"
     />
+    <script src="./js/modal.js" defer></script>
+    <!-- <script src="./js/scroll.js" defer></script> -->
     <title>Text Page</title>
   </head>
   <body>
@@ -27,16 +30,16 @@
         <div class="nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#clients" class="nav__link link">Клиенты</a>
+              <a href="./index.html#clients" class="nav__link link">Клиенты</a>
             </li>
             <li class="nav__item">
-              <a href="#srv" class="nav__link link">Услуги</a>
+              <a href="./index.html#srv" class="nav__link link">Услуги</a>
             </li>
             <li class="nav__item">
-              <a href="#docs" class="nav__link link">Сертификаты</a>
+              <a href="./index.html#docs" class="nav__link link">Сертификаты</a>
             </li>
             <li class="nav__item">
-              <a href="#contacts" class="nav__link link">Контакты</a>
+              <a href="./index.html#contacts" class="nav__link link">Контакты</a>
             </li>
           </ul>
           <button type="button" class="nav__burger">
@@ -77,7 +80,7 @@
       <p class="text">Заполните форму, мы свяжемся с вами в ближайшее время, обсудим задачи и предложим оптимальное решение.</p>      
     </div>
     <div class="text-section_four wrapper">
-      <h3 class="title-tfour">Списки маркированные и нумерованные. h3</h3>
+      <h3 class="title-four">Списки маркированные и нумерованные. h3</h3>
         <p class="subtitle">С 2009 года создаем чистоту на объектах. Подбираем график с учетом пожеланий клиента.</p>
         <ol class="list-numeration">
           <li>Экономим время, деньги и даем отличный результат за счет использования профессиональной техники, экологически безопасных средств, регулярного обучения персонала и оптимизации процесса.
@@ -140,6 +143,30 @@
           
         </div>
       </container>
+      
     </footer>
+    <form action="#" class="modal hidden">
+        <div class="nav">
+          <ul class="nav__burger-list">
+            <li class="nav__item">
+              <a href="#" class="nav__link link">Сотрудники</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link link">О компании</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link link">Реквизиты</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link link">Еще одна страница</a>
+            </li>
+          </ul>   
+        </div>
+        <div class="divider"><hr></div>
+        <div class="nav__burger-contacts">
+          <p class="footer__contacts_text" >Единая справочная служба</p>
+          <p class="footer__contacts_phone">8 800 333 99 09</p>
+        </div>
+      </form>
   </body>
 </html>
