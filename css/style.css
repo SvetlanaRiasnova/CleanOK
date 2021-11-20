@@ -47,15 +47,6 @@ h2 {
 }
 
 .intro__btn-float {
-  width: 150px;
-  height: 30px;
-  background-color: #FF785F;
-  font-family: Roboto;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
-  border: none;
-  margin-left: 550px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -65,6 +56,17 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 150px;
+  height: 30px;
+  background-color: #FF785F;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  border: none;
+  border-radius: 3px;
+  margin-left: 550px;
+  cursor: pointer;
 }
 
 .nav__link-float {
@@ -217,6 +219,7 @@ h2 {
   line-height: 25px;
   letter-spacing: 0.02em;
   border: none;
+  border-radius: 3px;
   text-decoration: none;
   cursor: pointer;
 }
@@ -675,7 +678,7 @@ sup {
 .divider {
   color: #E0E3F0;
   opacity: 0.3;
-  margin-top: 400px;
+  margin-top: 380px;
 }
 
 .nav__burger-contacts {
@@ -683,26 +686,8 @@ sup {
   text-align: center;
 }
 
-.nav__burger-contacts .footer__contacts_text {
-  font-family: Roboto;
-  font-weight: bold;
-  font-size: 11px;
-  line-height: 13px;
-  text-align: center;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: #041133;
-  opacity: 0.7;
-}
-
-.nav__burger-contacts .footer__contacts_phone {
-  margin-top: 20px;
-  font-family: Roboto;
-  font-weight: 500;
+.modal__contacts_phone {
   font-size: 16px;
-  line-height: 25px;
-  letter-spacing: 0.02em;
-  color: #6783FE;
 }
 
 .sertificates__wrapper {
@@ -1060,7 +1045,7 @@ sup {
 
 .about {
   width: 363px;
-  height: 405px;
+  min-height: 405px;
   margin-left: 366px;
   margin-top: 60px;
 }
@@ -1095,7 +1080,7 @@ sup {
 
 .form__wrapper {
   width: 362px;
-  height: 305px;
+  min-height: 305px;
   margin-top: 170px;
   margin-left: 82px;
   border: 0px;
@@ -1111,7 +1096,6 @@ sup {
   font-size: 14px;
   line-height: 20px;
   display: flex;
-  color: #041133;
 }
 
 .client_info {
@@ -1173,6 +1157,15 @@ input:focus {
   padding-top: 15px;
   padding-left: 15px;
   resize: none;
+}
+
+input, textarea, .scompany {
+  border: 1px solid #E0E3F0;
+  border-radius: 3px;
+}
+
+#placeholder {
+  color: #E0E3F0;
 }
 
 .action__btn {
@@ -1239,7 +1232,7 @@ input:focus {
   margin-top: 68px;
 }
 
-.footer__contacts_text {
+.footer__contacts_text, .modal__contacts_text {
   font-family: Roboto;
   font-weight: 500;
   font-size: 16px;
@@ -1256,7 +1249,7 @@ input:focus {
   color: rgba(4, 17, 51, 0.7);
 }
 
-.footer__contacts_phone {
+.footer__contacts_phone, .modal__contacts_phone {
   font-family: Roboto;
   font-weight: 500;
   font-size: 22px;
@@ -1264,5 +1257,9 @@ input:focus {
   letter-spacing: 0.02em;
   color: #6783FE;
   margin-top: 20px;
+}
+
+.modal__contacts_phone {
+  font-size: 16px;
 }
 /*# sourceMappingURL=style.css.map */
