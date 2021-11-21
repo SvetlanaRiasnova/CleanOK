@@ -161,6 +161,10 @@ h2 {
   height: 2px;
 }
 
+.intro__image {
+  width: 100%;
+}
+
 .intro {
   display: -ms-grid;
   display: grid;
@@ -839,19 +843,19 @@ sup {
 
 .offices {
   position: relative;
-  height: 537px;
+  min-height: 537px;
   margin: 0 auto;
   margin-top: -65px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 1440px;
 }
 
 .map {
+  width: 100%;
   position: absolute;
   z-index: -1;
-  height: 530px;
+  min-height: 530px;
 }
 
 .search {
@@ -862,7 +866,7 @@ sup {
   left: 942px;
   top: 20px;
   width: 363px;
-  height: 490px;
+  min-height: 490px;
   z-index: 2;
   background: #ffff;
 }
@@ -1041,12 +1045,15 @@ sup {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .about {
   width: 363px;
   min-height: 405px;
-  margin-left: 366px;
   margin-top: 60px;
 }
 
@@ -1257,5 +1264,33 @@ input, textarea, .scompany {
 
 .modal__contacts_phone {
   font-size: 16px;
+}
+
+@media (max-width: 1290px) {
+  .container {
+    max-width: 100%;
+  }
+  .intro__image {
+    width: 100%;
+  }
+  .intro__descr {
+    margin-left: 50px;
+  }
+  .offices {
+    max-width: 90%;
+    margin-left: 0px;
+  }
+  .offices .map {
+    width: 1270px;
+  }
+  .offices .search {
+    left: 800px;
+  }
+  .action {
+    margin-left: 0px;
+  }
+  .fixed {
+    width: 1280px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
