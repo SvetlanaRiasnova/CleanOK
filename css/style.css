@@ -201,6 +201,7 @@ h2 {
 .intro__image {
   margin-top: -55px;
   z-index: -1;
+  width: 100%;
 }
 
 .intro__btn {
@@ -660,8 +661,8 @@ sup {
 .modal {
   width: 360px;
   height: 90%;
-  top: 50px;
-  left: 1152px;
+  top: 60px;
+  left: 1124px;
   position: fixed;
   z-index: 2;
   background: #FFFFFF;
@@ -1189,6 +1190,24 @@ input, textarea, .scompany {
   opacity: 1;
 }
 
+.invalid {
+  border: 2px solid red;
+}
+
+.hidden {
+  display: none;
+}
+
+.error_name, .error_tel {
+  background-color: #fff;
+  color: #000;
+  width: 255px;
+  height: 20px;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
 .footer {
   background: #E0E3F0;
 }
@@ -1291,6 +1310,23 @@ input, textarea, .scompany {
   }
   .fixed {
     width: 1280px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 100%;
+  }
+  .intro__features {
+    margin-top: 85px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+  .intro__image {
+    width: 120%;
+    overflow: hidden;
   }
 }
 /*# sourceMappingURL=style.css.map */

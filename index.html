@@ -25,6 +25,7 @@
     <script src="./js/btn.js" defer></script>
     <script src="./js/modal.js" defer></script>
     <script src="./js/scroll.js" defer></script>
+    <script src="./js/action.js" defer></script>
   </head>
   <body>
     <header class="header container">
@@ -512,13 +513,27 @@
         <form action="#" method="post" class="action__form">
           <div class="form__wrapper">
             <div class="client_info">
-              <input type="text" id="sname" placeholder="Ваше имя" />
+              <input
+                class="sname"
+                type="text"
+                id="sname"
+                placeholder="Ваше имя"
+              />
+              <div class="error_name hidden">
+                <p style="margin: 20px">Введите ваше имя</p>
+              </div>
               <input
                 type="tel"
+                class="sphone"
                 id="sphone"
-                placeholder="+7 ("
-                pattern="([0-9]{3}[ -][0-9]{3}[ -][0-9]{4})"
+                placeholder="+7 "
+                mask="+79999999999"
+                pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
+                required
               />
+              <div class="error_tel hidden">
+                <p style="margin: 15px">Не верный формат</p>
+              </div>
             </div>
             <input
               type="text"
@@ -535,7 +550,7 @@
                 placeholder="Напишите, о чем нам нужно знать"
               ></textarea>
             </div>
-            <button class="action__btn" type="button">Заказать звонок</button>
+            <button class="action__btn" type="submit">Заказать звонок</button>
           </div>
         </form>
       </div>
@@ -561,16 +576,18 @@
       <div class="nav">
         <ul class="nav__burger-list">
           <li class="nav__item">
-            <a href="#" class="nav__link link">Сотрудники</a>
+            <a href="./textpage.html" class="nav__link link">Сотрудники</a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link link">О компании</a>
+            <a href="./textpage.html" class="nav__link link">О компании</a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link link">Реквизиты</a>
+            <a href="./textpage.html" class="nav__link link">Реквизиты</a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link link">Еще одна страница</a>
+            <a href="./textpage.html" class="nav__link link"
+              >Еще одна страница</a
+            >
           </li>
         </ul>
       </div>
