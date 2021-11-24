@@ -513,26 +513,31 @@
         <form action="#" method="post" class="action__form">
           <div class="form__wrapper">
             <div class="client_info">
-              <input
-                class="sname"
-                type="text"
-                id="sname"
-                placeholder="Ваше имя"
-              />
-              <div class="error_name hidden">
-                <p style="margin: 20px">Введите ваше имя</p>
+              <div class="enter-name">
+                <input
+                  class="sname"
+                  type="text"
+                  id="sname"
+                  placeholder="Ваше имя"
+                />
+                <div class="error_name hidden">
+                  <p style="margin: 0">Введите ваше имя</p>
+                </div>
               </div>
-              <input
-                type="tel"
-                class="sphone"
-                id="sphone"
-                placeholder="+7 "
-                mask="+79999999999"
-                pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
-                required
-              />
-              <div class="error_tel hidden">
-                <p style="margin: 15px">Не верный формат</p>
+
+              <div class="enter-phone">
+                <input
+                  type="tel"
+                  class="sphone"
+                  id="sphone"
+                  title="Формат: +7 (096) 999 99 99"
+                  placeholder="+7 "
+                  pattern="[0-9]{10}"
+                  required
+                />
+                <div class="error_tel hidden">
+                  <p style="margin: 0">Не верный формат</p>
+                </div>
               </div>
             </div>
             <input

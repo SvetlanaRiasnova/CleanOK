@@ -24,7 +24,7 @@ h2 {
 }
 
 .header__container {
-  height: 60;
+  height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,7 +38,8 @@ h2 {
 
 .fixed {
   width: 1440px;
-  height: 60px;
+  top: 0;
+  height: 60;
   position: fixed;
   z-index: 1555;
   background: #FFFFFF;
@@ -181,14 +182,14 @@ h2 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   min-height: 244px;
-  margin-top: 74px;
+  margin-top: 64px;
 }
 
 /**              перекрывает текст, как исправить?
  **/
 .footer__info {
   font-family: Roboto;
-  margin-top: 70px;
+  margin-top: 74px;
   margin-left: 137px;
   font-size: 14px;
   line-height: 20px;
@@ -208,7 +209,7 @@ h2 {
 
 .footer__contacts {
   margin-right: 154px;
-  margin-top: 68px;
+  margin-top: 70px;
 }
 
 .footer__contacts_text, .modal__contacts_text {
@@ -245,7 +246,7 @@ h2 {
 .modal {
   width: 360px;
   height: 90%;
-  top: 60px;
+  top: 50px;
   left: 1124px;
   position: fixed;
   z-index: 2;

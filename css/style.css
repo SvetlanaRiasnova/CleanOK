@@ -24,7 +24,7 @@ h2 {
 }
 
 .header__container {
-  height: 60;
+  height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,7 +38,8 @@ h2 {
 
 .fixed {
   width: 1440px;
-  height: 60px;
+  top: 0;
+  height: 60;
   position: fixed;
   z-index: 1555;
   background: #FFFFFF;
@@ -199,9 +200,9 @@ h2 {
 }
 
 .intro__image {
-  margin-top: -55px;
+  margin-top: -28px;
   z-index: -1;
-  width: 100%;
+  width: 740px;
 }
 
 .intro__btn {
@@ -661,7 +662,7 @@ sup {
 .modal {
   width: 360px;
   height: 90%;
-  top: 60px;
+  top: 50px;
   left: 1124px;
   position: fixed;
   z-index: 2;
@@ -932,7 +933,6 @@ sup {
   -webkit-box-shadow: 0px 0px 11px rgba(4, 17, 51, 0.11);
           box-shadow: 0px 0px 11px rgba(4, 17, 51, 0.11);
   border-radius: 5px;
-  margin: 0 0;
   padding: 20px;
   padding-left: 26px;
   height: 324px;
@@ -972,7 +972,7 @@ sup {
   font-family: Roboto;
   font-weight: 500;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 18px;
   letter-spacing: 0.02em;
   color: #041133;
   opacity: 0.8;
@@ -1201,11 +1201,22 @@ input, textarea, .scompany {
 .error_name, .error_tel {
   background-color: #fff;
   color: #000;
-  width: 255px;
-  height: 20px;
+  width: 171px;
+  height: 15px;
+  font-size: 12px;
   border-radius: 5px;
   margin: 0 auto;
   margin-top: 10px;
+}
+
+.enter-phone, .enter-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .footer {
@@ -1224,14 +1235,14 @@ input, textarea, .scompany {
       -ms-flex-pack: justify;
           justify-content: space-between;
   min-height: 244px;
-  margin-top: 74px;
+  margin-top: 64px;
 }
 
 /**              перекрывает текст, как исправить?
  **/
 .footer__info {
   font-family: Roboto;
-  margin-top: 70px;
+  margin-top: 74px;
   margin-left: 137px;
   font-size: 14px;
   line-height: 20px;
@@ -1251,7 +1262,7 @@ input, textarea, .scompany {
 
 .footer__contacts {
   margin-right: 154px;
-  margin-top: 68px;
+  margin-top: 70px;
 }
 
 .footer__contacts_text, .modal__contacts_text {
@@ -1283,50 +1294,5 @@ input, textarea, .scompany {
 
 .modal__contacts_phone {
   font-size: 16px;
-}
-
-@media (max-width: 1290px) {
-  .container {
-    max-width: 100%;
-  }
-  .intro__image {
-    width: 100%;
-  }
-  .intro__descr {
-    margin-left: 50px;
-  }
-  .offices {
-    max-width: 90%;
-    margin-left: 0px;
-  }
-  .offices .map {
-    width: 1270px;
-  }
-  .offices .search {
-    left: 800px;
-  }
-  .action {
-    margin-left: 0px;
-  }
-  .fixed {
-    width: 1280px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .container {
-    max-width: 100%;
-  }
-  .intro__features {
-    margin-top: 85px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-  }
-  .intro__image {
-    width: 120%;
-    overflow: hidden;
-  }
 }
 /*# sourceMappingURL=style.css.map */

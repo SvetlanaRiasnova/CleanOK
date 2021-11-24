@@ -11,7 +11,7 @@ errorName = document.querySelector(".error_name");
 // };
 
 function submitForm(evt) {
-    const loginTelRegEx =  /(?=.*[0-9])[0-9!+@#$%^&*()]{20,}/g;
+    const loginTelRegEx =  /(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*]{6,}/g;
     const isTelValid = loginTelRegEx.test(loginTel.value);
     const isNameValid = clientName.value.length > 1 && clientName.value.trim() !== "";
     // loginTel.mask("+79999999999");
