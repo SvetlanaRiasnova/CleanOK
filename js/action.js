@@ -5,10 +5,6 @@ sendBtn = document.querySelector(".action__btn"),
 clientName = document.querySelector(".sname"),
 errorName = document.querySelector(".error_name");
 
-// function toggleModal() {
-//     error_tel.classList.add("hidden");
-//     loginTel.value = "";
-// };
 
 function submitForm(evt) {
     const loginTelRegEx =  /(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*]{6,}/g;

@@ -23,6 +23,10 @@ h2 {
   display: none;
 }
 
+.logo {
+  text-decoration: none;
+}
+
 .header__container {
   height: 60px;
   display: -webkit-box;
