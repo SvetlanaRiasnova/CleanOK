@@ -78,7 +78,7 @@
         </div>
         <div class="intro__features">
           <p>
-            Более <a href="#contacts" class="city">60 городов </a><br />по
+            Более <a href="./textpage.html" class="city">60 городов </a><br />по
             Дальнему Востоку
           </p>
           <!-- 60 городов гиперссылка -->
@@ -441,9 +441,14 @@
       </div>
       <!--  слайдер с сертификатами гиперссылки -->
     </div>
-    <div class="offices container" id="contacts">
+    <div class="offices" id="contacts">
       <div class="map">
-        <img class="map" src="./src/img/Map.jpg" alt="map" />
+        <iframe
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3A531aed9404368fa80e9ce933a44055c6953fb5e69136566bfb0c68756c057323&amp;source=constructor"
+          width="100%"
+          height="530px"
+          frameborder="0"
+        ></iframe>
       </div>
       <div class="search">
         <form action="get" class="cities">
@@ -531,9 +536,7 @@
                   type="tel"
                   class="sphone"
                   id="sphone"
-                  title="Формат: +7 (096) 999 99 99"
                   placeholder="+7 "
-                  pattern="[0-9]{10}"
                   required
                 />
                 <div class="error_tel hidden">

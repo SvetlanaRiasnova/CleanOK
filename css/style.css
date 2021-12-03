@@ -857,13 +857,6 @@ sup {
           justify-content: center;
 }
 
-.map {
-  width: 100%;
-  position: absolute;
-  z-index: -1;
-  min-height: 530px;
-}
-
 .search {
   position: absolute;
   display: -webkit-box;
@@ -1298,5 +1291,50 @@ input, textarea, .scompany {
 
 .modal__contacts_phone {
   font-size: 16px;
+}
+
+@media (max-width: 1290px) {
+  .container {
+    max-width: 100%;
+  }
+  .intro__image {
+    width: 100%;
+  }
+  .intro__descr {
+    margin-left: 50px;
+  }
+  .offices {
+    max-width: 90%;
+    margin-left: 0px;
+  }
+  .offices .map {
+    width: 1270px;
+  }
+  .offices .search {
+    left: 800px;
+  }
+  .action {
+    margin-left: 0px;
+  }
+  .fixed {
+    width: 1280px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 100%;
+  }
+  .intro__features {
+    margin-top: 85px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+  .intro__image {
+    width: 120%;
+    overflow: hidden;
+  }
 }
 /*# sourceMappingURL=style.css.map */

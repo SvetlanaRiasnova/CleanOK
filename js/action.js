@@ -7,7 +7,7 @@ errorName = document.querySelector(".error_name");
 
 
 function submitForm(evt) {
-    const loginTelRegEx =  /(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*]{6,}/g;
+    const loginTelRegEx = /^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$/;
     const isTelValid = loginTelRegEx.test(loginTel.value);
     const isNameValid = clientName.value.length > 1 && clientName.value.trim() !== "";
     // loginTel.mask("+79999999999");
