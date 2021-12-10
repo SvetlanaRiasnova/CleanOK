@@ -14,8 +14,6 @@
 
 	items.forEach((item) => {
 		item.style.minWidth = `${itemWidth}px`;
-		// alert(itemsCount);
-		// alert(itemWidth);
 	});
 
 	

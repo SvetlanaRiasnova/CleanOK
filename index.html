@@ -50,13 +50,13 @@
               <a href="#contacts" class="nav__link link">Контакты</a>
             </li>
           </ul>
-          <button type="button" class="nav__burger">
-            <div class="burger">
-              <hr class="burger burger-one" />
-              <hr class="burger burger-tow" />
-              <hr class="burger burger-three" />
-            </div>
-          </button>
+          <div class="nav__burger">
+            <!-- <div class="burger"> -->
+            <div class="burger burger-one"></div>
+            <div class="burger"></div>
+            <div class="burger burger-three"></div>
+            <!-- </div> -->
+          </div>
         </div>
       </div>
     </header>
@@ -128,7 +128,7 @@
       </h2>
       <div class="services__info">
         <div class="services__list">
-          <button
+          <div
             class="tablinks"
             onclick="openService(event, 'service-one')"
             id="defaultOpen"
@@ -138,32 +138,29 @@
             <div class="list-header">
               Содержание внутренних помещений и территорий
             </div>
-          </button>
-          <button class="tablinks" onclick="openService(event, 'service-tow')">
+          </div>
+          <div class="tablinks" onclick="openService(event, 'service-tow')">
             <div class="list-number">02</div>
             <div class="list-header">
               Управление и эксплуатация коммерческой недвижимости и в сфере ЖКХ
             </div>
-          </button>
-          <button
-            class="tablinks"
-            onclick="openService(event, 'service-three')"
-          >
+          </div>
+          <div class="tablinks" onclick="openService(event, 'service-three')">
             <div class="list-number">03</div>
             <div class="list-header">Хозяйственное <br />обслуживание</div>
-          </button>
-          <button class="tablinks" onclick="openService(event, 'service-four')">
+          </div>
+          <div class="tablinks" onclick="openService(event, 'service-four')">
             <div class="list-number">04</div>
             <div class="list-header">
               Техническое обслуживание инженерных систем
             </div>
-          </button>
-          <button class="tablinks" onclick="openService(event, 'service-five')">
+          </div>
+          <div class="tablinks" onclick="openService(event, 'service-five')">
             <div class="list-number">05</div>
             <div class="list-header">
               Поддержка материально- технической базы
             </div>
-          </button>
+          </div>
         </div>
         <!-- Грид из номера услуги и описания -->
         <div class="services__content">
@@ -516,7 +513,7 @@
         </div>
       </div>
       <div class="action_form">
-        <form action="#" method="post" class="action__form">
+        <form action="./send.html" method="get" class="action__form">
           <div class="form__wrapper">
             <div class="client_info">
               <div class="enter-name">
@@ -581,7 +578,8 @@
         </div>
       </div>
     </footer>
-    <form action="#" class="modal hidden">
+    <div class="modal_fon hidden"></div>
+    <div class="modal hidden">
       <div class="nav">
         <ul class="nav__burger-list">
           <li class="nav__item">
@@ -605,6 +603,6 @@
         <p class="modal__contacts_text">Единая справочная служба</p>
         <p class="modal__contacts_phone">8 800 333 99 09</p>
       </div>
-    </form>
+    </div>
   </body>
 </html>
