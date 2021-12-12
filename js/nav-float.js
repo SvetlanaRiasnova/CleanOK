@@ -1,5 +1,5 @@
 let floatNav = document.querySelector('.header__container');
-let floatBtn = document.querySelector('.intro__btn-float');
+let floatBtn = document.querySelector('.header__btn-float');
 const bodyPos = document.querySelector('.intro');
 window.addEventListener('scroll', function (e) {
     e.preventDefault();

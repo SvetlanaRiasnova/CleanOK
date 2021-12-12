@@ -1,9 +1,9 @@
 const
 loginTel = document.querySelector(".sphone"),
-errorTel = document.querySelector(".error_tel"),
+errorTel = document.querySelector(".error-tel"),
 sendBtn = document.querySelector(".action__btn"),
 clientName = document.querySelector(".sname"),
-errorName = document.querySelector(".error_name");
+errorName = document.querySelector(".error-name");
 
 
 function submitForm(evt) {

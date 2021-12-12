@@ -32,8 +32,10 @@
         <div class="logo">
           <a href="./index.html" class="logo">CLEANOK</a>
         </div>
-        <div class="intro__btn-float hidden">
-          <a href="#call_action" class="nav__link-float"> Заказать звонок </a>
+        <div class="header__btn-float hidden">
+          <a href="#call_action" class="header__link-float">
+            Заказать звонок
+          </a>
         </div>
         <div class="nav">
           <ul class="nav__list">
@@ -71,7 +73,7 @@
             Отставьте заявку и наш менеджер свяжется с вами
           </p>
           <div class="intro__btn">
-            <a href="#call_action" class="nav__link-btn yakor"
+            <a href="#call_action" class="intro__link-btn yakor"
               >Заказать звонок</a
             >
           </div>
@@ -350,7 +352,7 @@
           <span class="sertificates__descr">сертификаты и рекомендации</span>
           <h2 class="sertificates__header">Мы подтвеждаем компетенцию</h2>
         </div>
-        <div class="sertificates wrapper">
+        <div class="sertificates__wrapper">
           <div class="slider-container">
             <div class="slider-track">
               <div class="slider-item">
@@ -460,38 +462,38 @@
           </div>
           <div class="cities-list">
             <div class="cities-item">
-              <p class="cities_name">Хабаровск</p>
-              <p class="cities_adress">ул. Серышева, 56</p>
-              <p class="cities_phone">+7 (4212) 616 649, +7 (4212) 770 333</p>
+              <p class="cities-name">Хабаровск</p>
+              <p class="cities-adress">ул. Серышева, 56</p>
+              <p class="cities-phone">+7 (4212) 616 649, +7 (4212) 770 333</p>
             </div>
             <div class="cities-item">
-              <p class="cities_name">Петропавловск-Камчатский</p>
-              <p class="cities_adress">ул.Максутова, д. 42, оф. 44</p>
-              <p class="cities_phone">8 (4152) 42 63 14, 8 914 020 38 08</p>
+              <p class="cities-name">Петропавловск-Камчатский</p>
+              <p class="cities-adress">ул.Максутова, д. 42, оф. 44</p>
+              <p class="cities-phone">8 (4152) 42 63 14, 8 914 020 38 08</p>
             </div>
             <div class="cities-item">
-              <p class="cities_name">Якутск</p>
-              <p class="cities_adress">ул. Орджонекидзе, д. 20, оф. 315</p>
-              <p class="cities_phone">8 914 288 88 84</p>
+              <p class="cities-name">Якутск</p>
+              <p class="cities-adress">ул. Орджонекидзе, д. 20, оф. 315</p>
+              <p class="cities-phone">8 914 288 88 84</p>
             </div>
             <div class="cities-item">
-              <p class="cities_name">Комсомольск-на-Амуре</p>
-              <p class="cities_adress">
+              <p class="cities-name">Комсомольск-на-Амуре</p>
+              <p class="cities-adress">
                 ул. Красногвардейская, д. 14, оф. 204.
               </p>
-              <p class="cities_phone">8 (4217) 54-68-45</p>
+              <p class="cities-phone">8 (4217) 54-68-45</p>
             </div>
           </div>
           <div class="gradient"></div>
           <div class="search-info">
-            <div class="search-info_content">
-              <p class="search-info_text">Единая справочная служба</p>
-              <p class="search-info_phone">8 800 333 99 09</p>
+            <div class="search-info__content">
+              <p class="search-info__text">Единая справочная служба</p>
+              <p class="search-info__phone">8 800 333 99 09</p>
             </div>
-            <p class="search-info_text-tow">(по России звонок бесплатный)</p>
+            <p class="search-info__text-tow">(по России звонок бесплатный)</p>
 
-            <div class="search-info_mail link">
-              <a href="#" class="search-info_mail link">info@cleanok.ru</a>
+            <div class="search-info__mail link">
+              <a href="#" class="search-info__mail link">info@cleanok.ru</a>
             </div>
           </div>
         </form>
@@ -500,9 +502,9 @@
     <section class="action">
       <a id="call_action"></a>
       <div class="about">
-        <span class="about_title">оставьте заявку</span>
-        <h2 class="about_header">Напишите нам</h2>
-        <div class="about_content">
+        <span class="about__title">оставьте заявку</span>
+        <h2 class="about__header">Напишите нам</h2>
+        <div class="about__content">
           С 2009 года создаем чистоту на объектах. Подбираем график с учетом
           пожеланий клиента. <br /><br />Экономим время, деньги и даем отличный
           результат за счет использования профессиональной техники, экологически
@@ -512,59 +514,58 @@
           и предложим оптимальное решение.
         </div>
       </div>
-      <div class="action_form">
-        <form action="./send.html" method="get" class="action__form">
-          <div class="form__wrapper">
-            <div class="client_info">
-              <div class="enter-name">
-                <input
-                  class="sname"
-                  type="text"
-                  id="sname"
-                  placeholder="Ваше имя"
-                />
-                <div class="error_name hidden">
-                  <p style="margin: 0">Введите ваше имя</p>
-                </div>
-              </div>
-
-              <div class="enter-phone">
-                <input
-                  type="tel"
-                  class="sphone"
-                  id="sphone"
-                  placeholder="+7 "
-                  required
-                />
-                <div class="error_tel hidden">
-                  <p style="margin: 0">Не верный формат</p>
-                </div>
+      <!-- <div class="action_form"> -->
+      <form action="./send.html" method="post" class="action__form">
+        <div class="action__form-wrapper">
+          <div class="client-info">
+            <div class="enter-name">
+              <input
+                class="sname"
+                type="text"
+                id="sname"
+                placeholder="Ваше имя"
+              />
+              <div class="error-name hidden">
+                <p style="margin: 0">Введите ваше имя</p>
               </div>
             </div>
-            <input
-              type="text"
-              id="scompany"
-              placeholder="Наименование компании"
-            />
-            <div class="client__messege">
-              <textarea
-                class="smess"
-                name="smassage"
-                id="smassege"
-                cols="47"
-                rows="6"
-                placeholder="Напишите, о чем нам нужно знать"
-              ></textarea>
+            <div class="enter-phone">
+              <input
+                type="tel"
+                class="sphone"
+                id="sphone"
+                placeholder="+7 "
+                required
+              />
+              <div class="error-tel hidden">
+                <p style="margin: 0">Не верный формат</p>
+              </div>
             </div>
-            <button class="action__btn" type="submit">Заказать звонок</button>
           </div>
-        </form>
-      </div>
+          <input
+            type="text"
+            id="scompany"
+            placeholder="Наименование компании"
+          />
+          <div class="client-messege">
+            <textarea
+              class="smess"
+              name="smassage"
+              id="smassege"
+              cols="47"
+              rows="6"
+              placeholder="Напишите, о чем нам нужно знать"
+            ></textarea>
+          </div>
+          <button class="action__btn" type="submit">Заказать звонок</button>
+        </div>
+      </form>
+      <!-- </div> -->
     </section>
     <footer class="footer">
       <div class="footer__wrapper container">
         <div class="footer__info">
-          <div class="logo">CLEANOK</div>
+          <a href="./index.html" class="logo">CLEANOK</a>
           <p class="footer__content">
             ООО «Клин Ок» — клининговая компания на Дальнем Востоке Данные
             юридического лица компании ОГРН, КПП <br />г. Хабаровск, ул.
@@ -572,13 +573,13 @@
           </p>
         </div>
         <div class="footer__contacts">
-          <p class="footer__contacts_text">Единая справочная служба</p>
-          <p class="footer__contacts_info">по России звонок бесплатный</p>
-          <p class="footer__contacts_phone">8 800 333 99 09</p>
+          <p class="footer__contacts-text">Единая справочная служба</p>
+          <p class="footer__contacts-info">по России звонок бесплатный</p>
+          <p class="footer__contacts-phone">8 800 333 99 09</p>
         </div>
       </div>
     </footer>
-    <div class="modal_fon hidden"></div>
+    <div class="modal-fon hidden"></div>
     <div class="modal hidden">
       <div class="nav">
         <ul class="nav__burger-list">
@@ -599,9 +600,9 @@
         </ul>
       </div>
       <div class="divider"><hr /></div>
-      <div class="nav__burger-contacts">
-        <p class="modal__contacts_text">Единая справочная служба</p>
-        <p class="modal__contacts_phone">8 800 333 99 09</p>
+      <div class="modal__burger-contacts">
+        <p class="modal__contacts-text">Единая справочная служба</p>
+        <p class="modal__contacts-phone">8 800 333 99 09</p>
       </div>
     </div>
   </body>

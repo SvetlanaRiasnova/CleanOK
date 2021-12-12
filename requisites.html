@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/requisites.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap"
       rel="stylesheet"
@@ -30,33 +29,33 @@
         <div class="logo">
           <a href="./index.html" class="logo">CLEANOK</a>
         </div>
-        <div class="intro__btn-float hidden">
-          <a href="#call_action" class="nav__link-float"> Заказать звонок </a>
+        <div class="header__btn-float hidden">
+          <a href="#call_action" class="header__link-float">
+            Заказать звонок
+          </a>
         </div>
         <div class="nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="./index.html#clients" class="nav__link link">Клиенты</a>
+              <a href="#clients" class="nav__link link">Клиенты</a>
             </li>
             <li class="nav__item">
-              <a href="./index.html#srv" class="nav__link link">Услуги</a>
+              <a href="#srv" class="nav__link link">Услуги</a>
             </li>
             <li class="nav__item">
-              <a href="./index.html#docs" class="nav__link link">Сертификаты</a>
+              <a href="#docs" class="nav__link link">Сертификаты</a>
             </li>
             <li class="nav__item">
-              <a href="./index.html#contacts" class="nav__link link"
-                >Контакты</a
-              >
+              <a href="#contacts" class="nav__link link">Контакты</a>
             </li>
           </ul>
-          <button type="button" class="nav__burger">
-            <div class="burger">
-              <hr class="burger burger-one" />
-              <hr class="burger burger-tow" />
-              <hr class="burger burger-three" />
-            </div>
-          </button>
+          <div class="nav__burger">
+            <!-- <div class="burger"> -->
+            <div class="burger burger-one"></div>
+            <div class="burger"></div>
+            <div class="burger burger-three"></div>
+            <!-- </div> -->
+          </div>
         </div>
       </div>
     </header>
@@ -80,7 +79,7 @@
     <footer class="footer">
       <div class="footer__wrapper container">
         <div class="footer__info">
-          <div class="logo">CLEANOK</div>
+          <a href="./index.html" class="logo">CLEANOK</a>
           <p class="footer__content">
             ООО «Клин Ок» — клининговая компания на Дальнем Востоке Данные
             юридического лица компании ОГРН, КПП <br />г. Хабаровск, ул.
@@ -88,13 +87,14 @@
           </p>
         </div>
         <div class="footer__contacts">
-          <p class="footer__contacts_text">Единая справочная служба</p>
-          <p class="footer__contacts_info">по России звонок бесплатный</p>
-          <p class="footer__contacts_phone">8 800 333 99 09</p>
+          <p class="footer__contacts-text">Единая справочная служба</p>
+          <p class="footer__contacts-info">по России звонок бесплатный</p>
+          <p class="footer__contacts-phone">8 800 333 99 09</p>
         </div>
       </div>
     </footer>
-    <form action="#" class="modal hidden">
+    <div class="modal-fon hidden"></div>
+    <div class="modal hidden">
       <div class="nav">
         <ul class="nav__burger-list">
           <li class="nav__item">
@@ -114,10 +114,10 @@
         </ul>
       </div>
       <div class="divider"><hr /></div>
-      <div class="nav__burger-contacts">
-        <p class="modal__contacts_text">Единая справочная служба</p>
-        <p class="modal__contacts_phone">8 800 333 99 09</p>
+      <div class="modal__burger-contacts">
+        <p class="modal__contacts-text">Единая справочная служба</p>
+        <p class="modal__contacts-phone">8 800 333 99 09</p>
       </div>
-    </form>
+    </div>
   </body>
 </html>
