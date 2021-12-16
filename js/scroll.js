@@ -21,10 +21,10 @@ document.querySelectorAll('a[href*="#"]').forEach(link => {
         const scrollTarget = document.getElementById(href);
         const topOffset = 180;
         const elementPosition = scrollTarget.getBoundingClientRect().top;
-        const offsetPositiom = elementPosition - topOffset;
+        const offsetPosition = elementPosition - topOffset;
 
         window.scrollBy({
-            top: offsetPositiom,
+            top: offsetPosition,
             behavior: 'smooth'
         })
     })

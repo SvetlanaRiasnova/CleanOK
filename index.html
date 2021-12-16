@@ -24,6 +24,7 @@
     <script src="./js/nav-float.js" defer></script>
     <script src="./js/modal.js" defer></script>
     <script src="./js/scroll.js" defer></script>
+    <script src="./js/searche.js" defer></script>
     <script src="./js/action.js" defer></script>
   </head>
   <body>
@@ -165,7 +166,7 @@
           </div>
         </div>
         <!-- Грид из номера услуги и описания -->
-        <div class="services__content">
+        <div class="services__content transition">
           <div id="service-one" class="service-one tabcontent">
             <div>
               <div class="title-one">Ежедневная уборка</div>
@@ -460,30 +461,30 @@
               <img src="./src/icons/Arrow-Search.png" alt="arrow-search" />
             </button>
           </div>
-          <div class="cities-list">
-            <div class="cities-item">
+          <ul class="cities-list">
+            <li class="cities-item">
               <p class="cities-name">Хабаровск</p>
               <p class="cities-adress">ул. Серышева, 56</p>
               <p class="cities-phone">+7 (4212) 616 649, +7 (4212) 770 333</p>
-            </div>
-            <div class="cities-item">
+            </li>
+            <li class="cities-item">
               <p class="cities-name">Петропавловск-Камчатский</p>
               <p class="cities-adress">ул.Максутова, д. 42, оф. 44</p>
               <p class="cities-phone">8 (4152) 42 63 14, 8 914 020 38 08</p>
-            </div>
-            <div class="cities-item">
+            </li>
+            <li class="cities-item">
               <p class="cities-name">Якутск</p>
               <p class="cities-adress">ул. Орджонекидзе, д. 20, оф. 315</p>
               <p class="cities-phone">8 914 288 88 84</p>
-            </div>
-            <div class="cities-item">
+            </li>
+            <li class="cities-item">
               <p class="cities-name">Комсомольск-на-Амуре</p>
               <p class="cities-adress">
                 ул. Красногвардейская, д. 14, оф. 204.
               </p>
               <p class="cities-phone">8 (4217) 54-68-45</p>
-            </div>
-          </div>
+            </li>
+          </ul>
           <div class="gradient"></div>
           <div class="search-info">
             <div class="search-info__content">
@@ -515,7 +516,7 @@
         </div>
       </div>
       <!-- <div class="action_form"> -->
-      <form action="./send.html" method="post" class="action__form">
+      <form action="./send.html" method="get" class="action__form">
         <div class="action__form-wrapper">
           <div class="client-info">
             <div class="enter-name">
