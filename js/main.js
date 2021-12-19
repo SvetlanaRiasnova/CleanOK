@@ -16,6 +16,6 @@ function openService(evt, service) {
 
   // Show the current tab, and add an "active" class to the link that opened the tab
   document.getElementById(service).style.display = "grid";
-  evt.currentTarget.className += "active";
+  evt.currentTarget.className += " active";
 }
 document.getElementById("defaultOpen").click();
