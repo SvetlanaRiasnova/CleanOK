@@ -59,20 +59,97 @@
     .action
         margin-left: 0px
     .fixed
-        width: 1280px
+        margin: 0 auto
+        width: 100%
+        justify-content: space-evenly
+    .header__btn-float
+        margin-left: 0px
     .modal
         left: 920px
-@media ( max-width: 1024px )
+@media ( max-width: 1030px )
     .container
         max-width: 100%
+    .intro__descr
+        margin-top: 50px
+    .intro__features
+        margin: 0 auto
+        margin-top: 45px
+    .intro__header
+        font-size: 45px
+    .intro__image
+        width: 100%
+        overflow: hidden
+        margin-top: 10px
+    .fixed
+        max-width: 1024px
+        justify-content: space-evenly
+        margin-left: 0px
+    .header__btn-float
+        margin-left: 0px
+    .clients__logo
+        width: 1000px
+        padding: 0 40px
+        margin: 0 auto
+        margin-top: 50px
+    .offices
+        max-width: 100%
+        margin-left: 0px
+        .search
+            left: 600px
+    .modal
+        left: 650px
+    .services
+        margin-top: 50px
+    .services__info
+        display: grid
+        grid-template-columns: 1fr
+        grid-template-rows: auto
+        justify-content: center
+        align-items: center
+        max-width: 1000px
+        margin: 0 auto
+        .tablinks
+            width: 180px
+            display: flex
+            flex-direction: column
+            justify-items: space-evenly
+            padding: 30px
+            margin: 0 auto
+    .services__list
+        width: 500px
+        display: grid
+        grid-template-columns: repeat(5, 1fr)
+        grid-template-rows: auto
+        column-gap: 20px
+        width: 150px
+    .list-header
+        padding-left: 8px
+    .services__content
+        display: flex
+        margin: 0 auto
+        margin-top: 50px
+    .slider-track, .slider-container, .sertificates__wrapper
+        width: 875px
+        margin: 0 auto
+    .divider
+        margin-top: 240px
+@media ( max-width: 834px )
+    .container
+        max-width: 85%
     .intro__features
         margin-top: 85px
         display: flex
+        width: 80%
+    .map
         width: 100%
-
+    .offices
+        max-width: 100%
+        margin-left: 0px
+        .search
+            left: 350px
     .intro__image
-        width: 120%
-        overflow: hidden
+        width: 150%
+        margin-top: 0
 // @media ( max-width: 1920px )
 //     .container
 //         min-width: 98%
