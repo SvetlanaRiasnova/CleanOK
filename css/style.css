@@ -1284,7 +1284,7 @@ input, textarea, .scompany {
 
 .modal {
   width: 360px;
-  height: 90%;
+  height: 90vh;
   top: 50px;
   left: 1124px;
   position: fixed;
@@ -1311,7 +1311,7 @@ input, textarea, .scompany {
 .divider {
   color: #E0E3F0;
   opacity: 0.3;
-  margin-top: 380px;
+  margin-top: 50vh;
 }
 
 .modal__burger-contacts {
