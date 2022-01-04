@@ -19,6 +19,12 @@
       href="https://fonts.googleapis.com/css2?family=Dosis:wght@700&family=Roboto:wght@400;500&family=Yanone+Kaffeesatz&display=swap"
       rel="stylesheet"
     />
+
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=62a6cc4e-5f71-4788-978e-6f278753a7c2&lang=ru_RU"
+      type="text/javascript"
+    ></script>
+
     <script src="./js/services.js" defer></script>
     <script src="./js/swiper.js" defer></script>
     <script src="./js/nav-float.js" defer></script>
@@ -54,11 +60,9 @@
             </li>
           </ul>
           <div class="nav__burger">
-            <!-- <div class="burger"> -->
             <div class="burger burger-one"></div>
             <div class="burger"></div>
             <div class="burger burger-three"></div>
-            <!-- </div> -->
           </div>
         </div>
       </div>
@@ -84,10 +88,8 @@
             Более <a href="./textpage.html" class="city">60 городов </a><br />по
             Дальнему Востоку
           </p>
-          <!-- 60 городов гиперссылка -->
           <p>Более 1 000 объектов <br />на обслуживании</p>
           <p>Более 500 тыс. м<sup>2</sup> обслуживаемых территорий</p>
-          <!-- степень -->
         </div>
       </div>
       <div class="intro__image">
@@ -136,7 +138,6 @@
             onclick="openService(event, 'service-one')"
             id="defaultOpen"
           >
-            <!-- when click goes blue and chandge card -->
             <div class="list-number">01</div>
             <div class="list-header">
               Содержание внутренних помещений и территорий
@@ -439,49 +440,51 @@
       </div>
     </div>
     <div class="offices" id="contacts">
-      <div class="map">
-        <iframe
+      <div class="map" id="map">
+        <!-- <iframe
           src="https://yandex.ru/map-widget/v1/?um=constructor%3A531aed9404368fa80e9ce933a44055c6953fb5e69136566bfb0c68756c057323&amp;source=constructor"
           width="100%"
           height="530px"
           frameborder="0"
-        ></iframe>
+        ></iframe> -->
       </div>
       <div class="search">
-        <form action="get" class="cities">
+        <form action="#" class="cities">
           <div class="search__city">
             <input
               class="search__city-name"
+              type="text"
+              id="suggest"
               placeholder="Введите свой город для поиска"
             />
             <button class="search__city-btn" type="button">
               <img src="./src/icons/Arrow-Search.png" alt="arrow-search" />
             </button>
           </div>
-          <ul class="cities-list">
-            <li class="cities-item">
+          <div class="cities-list">
+            <div class="cities-item city_one">
               <p class="cities-name">Хабаровск</p>
               <p class="cities-adress">ул. Серышева, 56</p>
               <p class="cities-phone">+7 (4212) 616 649, +7 (4212) 770 333</p>
-            </li>
-            <li class="cities-item">
+            </div>
+            <div class="cities-item city_tow">
               <p class="cities-name">Петропавловск-Камчатский</p>
               <p class="cities-adress">ул.Максутова, д. 42, оф. 44</p>
               <p class="cities-phone">8 (4152) 42 63 14, 8 914 020 38 08</p>
-            </li>
-            <li class="cities-item">
+            </div>
+            <div class="cities-item city_three">
               <p class="cities-name">Якутск</p>
               <p class="cities-adress">ул. Орджонекидзе, д. 20, оф. 315</p>
               <p class="cities-phone">8 914 288 88 84</p>
-            </li>
-            <li class="cities-item">
+            </div>
+            <div class="cities-item city_four">
               <p class="cities-name">Комсомольск-на-Амуре</p>
               <p class="cities-adress">
                 ул. Красногвардейская, д. 14, оф. 204.
               </p>
               <p class="cities-phone">8 (4217) 54-68-45</p>
-            </li>
-          </ul>
+            </div>
+          </div>
           <div class="gradient"></div>
           <div class="search-info">
             <div class="search-info__content">

@@ -474,11 +474,6 @@ sup {
   color: rgba(4, 17, 51, 0.7);
 }
 
-.hidden {
-  visibility: hidden;
-  display: none;
-}
-
 .service-tow {
   display: -ms-grid;
   display: grid;
@@ -518,11 +513,6 @@ sup {
   width: 358px;
   background: url(../src/img/Service2.jpg) no-repeat center;
   border-radius: 5px;
-}
-
-.hidden {
-  visibility: hidden;
-  display: none;
 }
 
 .service-three {
@@ -638,11 +628,6 @@ sup {
 .service-four__list .content p {
   margin-top: 24px;
   padding-right: 50px;
-}
-
-.hidden {
-  visibility: hidden;
-  display: none;
 }
 
 .service-five {
@@ -839,7 +824,6 @@ sup {
 
 .map {
   width: 100%;
-  position: absolute;
   z-index: -1;
   min-height: 530px;
 }
@@ -922,6 +906,7 @@ sup {
   padding: 20px;
   padding-left: 26px;
   height: 324px;
+  list-style: none;
 }
 
 ::-webkit-scrollbar-track {
@@ -942,6 +927,7 @@ sup {
 
 .cities-item {
   margin-top: -17px;
+  cursor: pointer;
 }
 
 .gradient {
@@ -1283,15 +1269,28 @@ input, textarea, .scompany {
 }
 
 .modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 360px;
-  height: 90vh;
+  height: 90%;
   top: 50px;
-  left: 1124px;
+  right: 0;
   position: fixed;
   z-index: 2;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 0px 11px rgba(4, 17, 51, 0.11);
           box-shadow: 0px 0px 11px rgba(4, 17, 51, 0.11);
+}
+
+.modal .divider {
+  color: #E0E3F0;
+  opacity: 0.3;
+  margin-top: 350px;
 }
 
 .nav__burger-list {
@@ -1306,12 +1305,6 @@ input, textarea, .scompany {
 
 .nav__burger-list .link {
   cursor: pointer;
-}
-
-.divider {
-  color: #E0E3F0;
-  opacity: 0.3;
-  margin-top: 50vh;
 }
 
 .modal__burger-contacts {
@@ -1334,22 +1327,48 @@ input, textarea, .scompany {
 
 @media (max-width: 1440px) {
   .container {
-    max-width: 100%;
+    width: 99vw;
   }
   .intro__image {
     width: 100%;
   }
-  .modal {
-    height: 80%;
-  }
+}
+
+.fixed {
+  margin: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.fixed .clients__logo {
+  width: 1000px;
+  padding: 0 40px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.fixed .offices {
+  max-width: 100%;
+  margin-left: 0px;
+}
+
+.fixed .offices .search {
+  left: 1010px;
 }
 
 @media (max-width: 1366px) {
   .container {
-    max-width: 100%;
+    width: 99vw;
   }
   .intro__image {
     width: 100%;
+  }
+  .clients__logo {
+    width: 1000px;
+    padding: 0 40px;
+    margin: 0 auto;
+    margin-top: 50px;
   }
   .offices {
     max-width: 100%;
@@ -1359,7 +1378,20 @@ input, textarea, .scompany {
     left: 950px;
   }
   .modal {
-    left: 1000px;
+    left: 1156px;
+  }
+  .modal .divider {
+    margin-top: 300px;
+  }
+  .fixed {
+    margin: 0;
+    width: 1366px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header__btn-float {
+    margin-left: 280px;
   }
 }
 
@@ -1386,9 +1418,9 @@ input, textarea, .scompany {
   .fixed {
     margin: 0 auto;
     width: 100%;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .header__btn-float {
     margin-left: 0px;
@@ -1441,7 +1473,7 @@ input, textarea, .scompany {
     left: 600px;
   }
   .modal {
-    left: 650px;
+    left: 656px;
   }
   .services {
     margin-top: 50px;
