@@ -42,14 +42,16 @@ myMap.geoObjects.add(myPlacemark3);
 
 var srchCt = document.querySelector('.search__city-name');
 const srchBtn = document.querySelector('.search__city-btn');
-const srchCityKhab = document.querySelector('.city_one');
-const srchCityPK = document.querySelector('.city_tow');
-const srchCityYak = document.querySelector('.city_three');
-const srchCityKoms = document.querySelector('.city_four');
+const srchCityKhab = document.querySelector('.one');
+const srchCityPK = document.querySelector('.tow');
+const srchCityYak = document.querySelector('.three');
+const srchCityKoms = document.querySelector('.four');
 const Arr = [srchCityKhab, srchCityPK, srchCityYak, srchCityKoms];
+
 srchCityKhab.addEventListener('click', function(){
   myMap.setZoom(15);
   myMap.setCenter([48.489223, 135.062709]);
+ 
 });
 
 srchCityPK.addEventListener('click', function(){

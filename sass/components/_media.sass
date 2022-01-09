@@ -44,13 +44,13 @@
         width: 99vw
     .intro__image
         width: 100%
-    // .modal
-    //     height: 80%
+    .modal
+        height: 80%
         // left: 1156px
-.fixed
-    margin: 0
+    .fixed
+        margin: 0
     // width: 100vw
-    justify-content: space-between
+        justify-content: space-between
     .clients__logo
         width: 1000px
         padding: 0 40px
@@ -59,8 +59,8 @@
     .offices
         max-width: 100%
         margin-left: 0px
-        .search
-            left: 1010px
+        // .search
+        //     left: 1010px
 
 @media (max-width: 1366px)
     .container
@@ -75,12 +75,12 @@
     .offices
         max-width: 100%
         margin-left: 0px
-        .search
-            left: 950px
-    .modal
-        left: 1156px
-        .divider
-            margin-top: 300px
+        // .search
+        //     left: 950px
+    // .modal
+    //     left: 1156px
+    //     .divider
+    //         margin-top: 300px
     .fixed
         margin: 0
         width: 1366px
@@ -97,8 +97,8 @@
     .offices
         max-width: 100%
         margin-left: 0px
-        .search
-            left: 800px
+        // .search
+        //     left: 800px
     .action
         margin-left: 0px
     .fixed
@@ -107,8 +107,8 @@
         justify-content: space-between
     .header__btn-float
         margin-left: 0px
-    .modal
-        left: 920px
+    // .modal
+    //     left: 920px
 @media ( max-width: 1030px )
     .container
         max-width: 100%
@@ -130,17 +130,17 @@
     .header__btn-float
         margin-left: 240px
     .clients__logo
-        width: 1000px
+        width: 100vw
         padding: 0 40px
         margin: 0 auto
         margin-top: 50px
     .offices
         max-width: 100%
         margin-left: 0px
-        .search
-            left: 600px
-    .modal
-        left: 656px
+    .search
+        right: 20px
+    // .modal
+    //     left: 656px
     .services
         margin-top: 50px
     .services__info
@@ -155,48 +155,121 @@
             width: 150px
             display: flex
             flex-direction: column
-            // justify-content: center
-            // padding: 30px 0
-            // margin: 0 auto
     .services__list
         width: 100%
         display: grid
         grid-template-columns: repeat(5, 1fr)
         justify-content: space-between
-        // grid-template-rows: auto
-        // column-gap: 20px
-        // width: 100px
-        // margin: 0 auto
+        width: 90vw
+        margin-bottom: 50px
     .list-header
-        // padding-left: 8px
-        // width: 140px
         font-size: 14px
-
     .list-number
         font-size: 22px
-    .services__content
+    .services__content, .tabcontent
         display: flex
         margin: 0 auto
-        margin-top: 50px
     .slider-track, .slider-container, .sertificates__wrapper
         width: 875px
         margin: 0 auto
-    .divider
-        margin-top: 240px
-@media ( max-width: 834px )
-    .container
-        max-width: 85%
+    .modal__contacts-text
+        margin-top: 15%
+@media ( max-width: 835px )
+    .intro__descr
+        width: 50vw
     .intro__features
+        width: 90vw
         margin-top: 85px
-        display: flex
-        width: 80%
-    .map
-        width: 100%
+        display: inline-flex
+        grid-column-gap: 50px
     .offices
         max-width: 100%
         margin-left: 0px
-        .search
-            left: 350px
     .intro__image
-        width: 150%
-        margin-top: 0
+        width: 100%
+        margin-top: -50px
+    .clients__logo
+        width: 90vw
+        padding: 0 40px
+        margin: 0 auto
+        margin-top: 50px
+    .servises__header
+        margin-left: 0px
+    .services
+        text-align: center
+    .services__info
+        margin: 0 auto
+        width: 95vw
+    .services__descr, .services__header
+        margin: 0 auto
+    .services__header
+        margin-top: 50px
+    .services__list
+        margin-top: 50px
+        // display: flex
+        flex-direction: row
+        justify-content: center
+        row-gap: 5px
+    .services__content, .tabcontent
+        width: 80vw
+    .tabcontent
+        padding-top: 0px
+        margin-top: 0px
+    .service-one
+        grid-column-gap: 20px
+        padding-top: 20px
+        padding-left: 50px
+        .content-one, .title-one
+
+            text-align: left
+    .service-three__info
+        width: 272px
+        margin-top: 10px
+    .service-three__img, .service-five__img, .service-tow__img
+        width: 280px
+        position: relative
+    .service-four
+        margin-top: 0px
+        .title-one
+            margin-left: 20px
+    .service-four__wrapper
+        width: 300px
+        grid-column-gap: 20px
+    .service-four__list
+        margin-top: 0px
+        .content
+            margin-top: 10px
+    .slider-track, .slider-container, .sertificates__wrapper
+        width: 600px
+        margin: 0 auto
+    .search
+        right: 50px
+        .search-info__content
+            flex-direction: column
+            margin-top: 0
+        .search-info__phone, .search-info__mail
+            margin: 10px
+    .search__city-name
+        font-size: 10px
+    .cities-phone
+        font-size: 10px
+    .fixed
+        position: inherit
+        width: 80vw
+    .search, .cities
+        width: 250px
+    .action
+        flex-direction: column
+        margin: 0 auto
+        align-items: center
+    .action__form-wrapper
+        margin-top: 50px
+        margin-left: 0px
+    .footer__info
+        width: 200px
+    .footer__contacts
+    .modal
+        width: 240px
+        height: 60%
+        .modal__contacts-text
+            margin-top: 25%

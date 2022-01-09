@@ -6,6 +6,7 @@ function showModal() {
     
     modalWindow.classList.toggle("hidden");
     modalFon.classList.toggle("hidden");
+
 }
 
     document.addEventListener('keydown', function(evt) {
