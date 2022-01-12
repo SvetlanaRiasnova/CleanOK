@@ -19,18 +19,16 @@
       href="https://fonts.googleapis.com/css2?family=Dosis:wght@700&family=Roboto:wght@400;500&family=Yanone+Kaffeesatz&display=swap"
       rel="stylesheet"
     />
-
     <script
       src="https://api-maps.yandex.ru/2.1/?apikey=62a6cc4e-5f71-4788-978e-6f278753a7c2&lang=ru_RU"
       type="text/javascript"
     ></script>
-
     <script src="./js/services.js" defer></script>
     <script src="./js/swiper.js" defer></script>
     <script src="./js/nav-float.js" defer></script>
     <script src="./js/modal.js" defer></script>
     <script src="./js/scroll.js" defer></script>
-    <script src="./js/searche.js" defer></script>
+    <script src="./js/search.js" defer></script>
     <script src="./js/action.js" defer></script>
   </head>
   <body>
@@ -67,7 +65,7 @@
         </div>
       </div>
     </header>
-    <div class="intro container">
+    <section class="intro container">
       <div class="intro__descr">
         <div>
           <span class="intro__header"
@@ -99,8 +97,8 @@
           alt="clean room"
         />
       </div>
-    </div>
-    <div class="clients container" id="clients">
+    </section>
+    <section class="clients container" id="clients">
       <span class="clients__descr">Наши клиенты</span>
       <h2 class="clients__header">Нам доверяют</h2>
       <div class="clients__logo">
@@ -125,7 +123,7 @@
         <img src="./src/icons/clients/vivea.png" alt="Vivea" />
         <img src="./src/icons/clients/baltica.png" alt="Baltica" />
       </div>
-    </div>
+    </section>
     <section class="services container" id="srv">
       <span class="services__descr">услуги</span>
       <h2 class="services__header">
@@ -328,7 +326,6 @@
           </div>
           <div id="service-five" class="service-five tabcontent">
             <div class="service-five__info">
-              <!-- <div class="service-five__content"> -->
               <div class="icon">
                 <img src="./src/icons/service5/parts.png" alt="parts" />
               </div>
@@ -345,20 +342,19 @@
                 <img src="./src/icons/service5/office.png" alt="office" />
               </div>
               <div class="title">Общее офисное снабжение.</div>
-              <!-- </div> -->
             </div>
             <div class="service-five__img"></div>
           </div>
         </div>
       </div>
     </section>
-    <div class="sertificates" id="docs">
-      <div class="sertificates__wrapper">
-        <div class="sertificates__title">
-          <span class="sertificates__descr">сертификаты и рекомендации</span>
-          <h2 class="sertificates__header">Мы подтвеждаем компетенцию</h2>
+    <section class="certificates container" id="docs">
+      <div class="certificates__wrapper">
+        <div class="certificates__title">
+          <span class="certificates__descr">сертификаты и рекомендации</span>
+          <h2 class="certificates__header">Мы подтвеждаем компетенцию</h2>
         </div>
-        <div class="sertificates__wrapper">
+        <div class="certificates__wrapper">
           <div class="slider-container">
             <div class="slider-track">
               <div class="slider-item">
@@ -367,7 +363,7 @@
                 >
                   <img
                     src="./src/icons/PDFSertificat.png"
-                    alt="sertificate"
+                    alt="certificates"
                     class="slider-item__img"
                   />
                 </a>
@@ -384,7 +380,7 @@
                 >
                   <img
                     src="./src/icons/PDFSertificat.png"
-                    alt="sertificate"
+                    alt="certificates"
                     class="slider-item__img"
                   />
                 </a>
@@ -401,7 +397,7 @@
                 >
                   <img
                     src="./src/icons/PDFSertificat.png"
-                    alt="sertificate"
+                    alt="certificates"
                     class="slider-item__img"
                   />
                 </a>
@@ -420,7 +416,7 @@
                 >
                   <img
                     src="./src/icons/PDFSertificat.png"
-                    alt="sertificate"
+                    alt="certificates"
                     class="slider-item__img"
                   />
                 </a>
@@ -436,7 +432,6 @@
               <div class="slider-item">слайд 7</div>
               <div class="slider-item">слайд 8</div>
             </div>
-            <!-- <div class="swiper_arrows"> -->
             <div class="slider-buttons">
               <button class="btn-prev"></button>
               <button class="btn-next"></button>
@@ -444,7 +439,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <div class="offices" id="contacts">
       <div class="map" id="map"></div>
       <div class="search">
@@ -514,7 +509,6 @@
           и предложим оптимальное решение.
         </div>
       </div>
-      <!-- <div class="action_form"> -->
       <form action="./send.html" method="get" class="action__form">
         <div class="action__form-wrapper">
           <div class="client-info">
@@ -560,7 +554,6 @@
           <button class="action__btn" type="submit">Заказать звонок</button>
         </div>
       </form>
-      <!-- </div> -->
     </section>
     <footer class="footer">
       <div class="footer__wrapper container">
@@ -599,7 +592,6 @@
           </li>
         </ul>
       </div>
-
       <div class="modal__burger-contacts">
         <div class="divider"><hr /></div>
         <p class="modal__contacts-text">Единая справочная служба</p>

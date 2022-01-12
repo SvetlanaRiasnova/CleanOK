@@ -582,7 +582,7 @@ sup {
 }
 
 .service-four__container {
-  margin-top: 60px;
+  margin-top: 40px;
 }
 
 .service-four__wrapper {
@@ -610,7 +610,6 @@ sup {
   text-align: center;
 }
 
-/**     подогнать под перфек пиксель согласно макету, оптимизировать код **/
 .service-four__list {
   background-color: #f8fafb;
   border-radius: 5px;
@@ -618,7 +617,7 @@ sup {
 }
 
 .service-four__list .title-one {
-  margin-top: 60px;
+  margin-top: 40px;
 }
 
 .service-four__list .content {
@@ -670,13 +669,12 @@ sup {
   border-radius: 5px;
 }
 
-.sertificates__wrapper {
+.certificates__wrapper {
   width: 1174px;
-  min-height: 572px;
   margin: 0 auto;
 }
 
-.sertificates__descr {
+.certificates__descr {
   font-family: Roboto;
   font-weight: bold;
   font-size: 11px;
@@ -687,7 +685,7 @@ sup {
   opacity: 0.8;
 }
 
-.sertificates__header {
+.certificates__header {
   margin-top: 17px;
   font-family: Yanone Kaffeesatz;
   font-size: 35px;
@@ -698,16 +696,9 @@ sup {
   opacity: 0.8;
 }
 
-.sertificates__title {
+.certificates__title {
   text-align: center;
   margin-top: 120px;
-}
-
-*,
-::before,
-::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 .slider-container {
@@ -816,7 +807,6 @@ sup {
   position: relative;
   min-height: 537px;
   margin: 0 auto;
-  margin-top: -165px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -826,6 +816,7 @@ sup {
   width: 100%;
   z-index: -1;
   min-height: 530px;
+  margin-top: 64px;
 }
 
 .search {
@@ -1015,6 +1006,7 @@ sup {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-bottom: 80px;
 }
 
 .about {
@@ -1200,11 +1192,8 @@ input, textarea, .scompany {
       -ms-flex-pack: justify;
           justify-content: space-between;
   min-height: 244px;
-  margin-top: -84px;
 }
 
-/**              перекрывает текст, как исправить?
- **/
 .footer__info {
   font-family: Roboto;
   margin-top: 74px;
@@ -1335,6 +1324,9 @@ input, textarea, .scompany {
   }
   .fixed {
     margin: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .clients__logo {
     width: 1000px;
@@ -1501,7 +1493,7 @@ input, textarea, .scompany {
     display: flex;
     margin: 0 auto;
   }
-  .slider-track, .slider-container, .sertificates__wrapper {
+  .slider-track, .slider-container, .certificates__wrapper {
     width: 875px;
     margin: 0 auto;
   }
@@ -1602,7 +1594,7 @@ input, textarea, .scompany {
   .service-four__list .content {
     margin-top: 10px;
   }
-  .slider-track, .slider-container, .sertificates__wrapper {
+  .slider-track, .slider-container, .certificates__wrapper {
     width: 600px;
     margin: 0 auto;
   }
@@ -1819,10 +1811,6 @@ h3 {
 .first-column {
   text-align: left;
   margin-left: 38px;
-}
-
-.footer {
-  margin-top: 158px;
 }
 
 .modal__contacts_phone {
