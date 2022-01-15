@@ -4,7 +4,9 @@
         var myMap = new ymaps.Map("map", {
             center: [58.489223, 155.062709],          
             zoom: 4
+            
         });
+        myMap.behaviors.disable('scrollZoom');
     
 // масштабирование при нажатии на метку
 var myPlacemark0 = new ymaps.Placemark([48.489223, 135.062709]);
