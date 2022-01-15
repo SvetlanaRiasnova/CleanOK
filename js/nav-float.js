@@ -1,9 +1,9 @@
-let floatNav = document.querySelector('.header__container');
-let floatBtn = document.querySelector('.header__btn-float');
+const floatNav = document.querySelector('.header__container');
+const floatBtn = document.querySelector('.header__btn-float');
 const bodyPos = document.querySelector('.intro');
 window.addEventListener('scroll', function (e) {
     e.preventDefault();
-	let scrollCount = document.documentElement.scrollTop;
+	const scrollCount = document.documentElement.scrollTop;
     if (scrollCount > 60) {
         floatNav.classList.add('fixed');
         floatBtn.classList.remove('hidden');
@@ -14,5 +14,5 @@ window.addEventListener('scroll', function (e) {
         bodyPos.classList.remove('move');
     }
 floatNav.getAnimations({
-                        behavior: 'smooth' });
-        });
+        behavior: 'smooth' });
+    });
