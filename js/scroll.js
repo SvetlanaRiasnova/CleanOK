@@ -5,7 +5,7 @@ document.querySelectorAll('a[href*="#"]').forEach(link => {
 
         const href = this.getAttribute('href').substr(1);
         const scrollTarget = document.getElementById(href);
-        const topOffset = 180;
+        const topOffset = 140;
         const elementPosition = scrollTarget.getBoundingClientRect().top;
         const offsetPosition = elementPosition - topOffset;
 
