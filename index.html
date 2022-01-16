@@ -68,9 +68,9 @@
     <div class="intro container">
       <div class="intro__descr">
         <div>
-          <span class="intro__header"
-            >Техническая эксплуатация <br />и содержание недвижимости</span
-          >
+          <h1 class="intro__header">
+            Техническая эксплуатация <br />и содержание недвижимости
+          </h1>
           <p class="intro__text">
             Забота о вашей недвижимости на регулярной и разовой основе.
             Отставьте заявку и наш менеджер свяжется с вами
@@ -79,7 +79,7 @@
             <a href="#call_action" class="intro__link-btn">Заказать звонок</a>
           </div>
         </div>
-        <div class="intro__features">
+        <div class="intro__features intro__text">
           <p>
             Более <a href="./textpage.html" class="city">60 городов </a><br />по
             Дальнему Востоку
@@ -93,7 +93,7 @@
       </div>
     </div>
     <section class="clients container" id="clients">
-      <span class="clients__descr">Наши клиенты</span>
+      <span class="descr">Наши клиенты</span>
       <h2 class="clients__header">Нам доверяют</h2>
       <div class="clients__logos">
         <img src="./src/icons/clients/mts.png" alt="MTS" />
@@ -119,35 +119,39 @@
       </div>
     </section>
     <section class="services container" id="srv">
-      <span class="services__descr">услуги</span>
+      <span class="services__descr descr">услуги</span>
       <h2 class="services__header">
         Берем на себя заботу <br />о вашей недвижимости
       </h2>
       <div class="services__info">
         <div class="services__list">
-          <div class="tablinks" id="defaultOpen">
+          <div
+            class="tablinks"
+            onclick="openService(event, 'service-one')"
+            id="defaultOpen"
+          >
             <div class="list-number">01</div>
             <div class="list-header">
               Содержание внутренних помещений и территорий
             </div>
           </div>
-          <div class="tablinks">
+          <div class="tablinks" onclick="openService(event, 'service-tow')">
             <div class="list-number">02</div>
             <div class="list-header">
               Управление и эксплуатация коммерческой недвижимости и в сфере ЖКХ
             </div>
           </div>
-          <div class="tablinks">
+          <div class="tablinks" onclick="openService(event, 'service-three')">
             <div class="list-number">03</div>
             <div class="list-header">Хозяйственное <br />обслуживание</div>
           </div>
-          <div class="tablinks">
+          <div class="tablinks" onclick="openService(event, 'service-four')">
             <div class="list-number">04</div>
             <div class="list-header">
               Техническое обслуживание инженерных систем
             </div>
           </div>
-          <div class="tablinks">
+          <div class="tablinks" onclick="openService(event, 'service-five')">
             <div class="list-number">05</div>
             <div class="list-header">
               Поддержка материально- технической базы
@@ -341,7 +345,7 @@
     <section class="certificates container" id="docs">
       <div class="certificates__wrapper">
         <div class="certificates__title">
-          <span class="certificates__descr">сертификаты и рекомендации</span>
+          <span class="descr">сертификаты и рекомендации</span>
           <h2 class="certificates__header">Мы подтвеждаем компетенцию</h2>
         </div>
         <div class="certificates__wrapper">
@@ -487,7 +491,7 @@
     <section class="action">
       <a id="call_action"></a>
       <div class="about">
-        <span class="about__title">оставьте заявку</span>
+        <span class="about__title descr">оставьте заявку</span>
         <h2 class="about__header">Напишите нам</h2>
         <div class="about__content">
           С 2009 года создаем чистоту на объектах. Подбираем график с учетом
