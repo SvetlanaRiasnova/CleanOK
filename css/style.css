@@ -9,12 +9,42 @@
   margin: 0 auto;
 }
 
+h1 {
+  font-family: Yanone Kaffeesatz;
+  font-size: 52px;
+  line-height: 55px;
+  letter-spacing: 0.01em;
+  color: #041133;
+  opacity: 0.8;
+  font-weight: normal;
+}
+
 h2 {
   font-family: Yanone Kaffeesatz;
   font-size: 35px;
   line-height: 35px;
   letter-spacing: 0.01em;
   color: #041133;
+  opacity: 0.8;
+}
+
+h3 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+  color: rgba(4, 17, 51, 0.7);
+}
+
+.descr {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #6783FE;
   opacity: 0.8;
 }
 
@@ -165,22 +195,13 @@ h2 {
 }
 
 .intro__descr {
-  margin-top: 130px;
+  margin-top: 92px;
   margin-left: 135px;
   width: 532px;
 }
 
-.intro__header {
-  font-family: Yanone Kaffeesatz;
-  font-size: 52px;
-  line-height: 55px;
-  letter-spacing: 0.01em;
-  color: #041133;
-  opacity: 0.8;
-}
-
-.intro__text {
-  margin-top: 30px;
+.intro__text, .about__content {
+  margin-top: -5px;
   font-family: Roboto;
   font-size: 16px;
   line-height: 25px;
@@ -189,7 +210,7 @@ h2 {
 }
 
 .intro__image {
-  margin-top: -52px;
+  margin-top: -56px;
   z-index: -1;
   width: 740px;
 }
@@ -234,11 +255,6 @@ h2 {
       grid-template-rows: 1fr 1fr;
   grid-column-gap: 75px;
   grid-row-gap: 10px;
-  font-family: Roboto;
-  font-size: 16px;
-  line-height: 25px;
-  letter-spacing: 0.02em;
-  color: rgba(4, 17, 51, 0.7);
 }
 
 sup {
@@ -258,17 +274,6 @@ sup {
   text-align: center;
   width: 1014px;
   margin-top: 62px;
-}
-
-.clients__descr {
-  font-family: Roboto;
-  font-weight: bold;
-  font-size: 11px;
-  line-height: 13px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: #6783FE;
-  opacity: 0.8;
 }
 
 .clients__header {
@@ -300,14 +305,6 @@ sup {
 
 .services__descr {
   margin-left: 135px;
-  font-family: Roboto;
-  font-weight: bold;
-  font-size: 11px;
-  line-height: 13px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: #6783FE;
-  opacity: 0.8;
 }
 
 .services__header {
@@ -673,17 +670,6 @@ sup {
   margin: 0 auto;
 }
 
-.certificates__descr {
-  font-family: Roboto;
-  font-weight: bold;
-  font-size: 11px;
-  line-height: 13px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: #6783FE;
-  opacity: 0.8;
-}
-
 .certificates__header {
   margin-top: 17px;
   font-family: Yanone Kaffeesatz;
@@ -824,7 +810,7 @@ sup {
   display: -ms-flexbox;
   display: flex;
   right: 210px;
-  top: 20px;
+  top: 25px;
   width: 363px;
   min-height: 490px;
   border-radius: 5px;
@@ -1011,17 +997,7 @@ sup {
 .about {
   width: 363px;
   min-height: 405px;
-  margin-top: 57px;
-}
-
-.about__title {
-  font-family: Roboto;
-  font-weight: bold;
-  font-size: 11px;
-  line-height: 13px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: #6783FE;
+  margin-top: 59px;
 }
 
 .about__header {
@@ -1034,11 +1010,7 @@ sup {
 }
 
 .about__content {
-  font-family: Roboto;
-  font-size: 16px;
-  line-height: 23.2px;
-  letter-spacing: 0.02em;
-  color: rgba(4, 17, 51, 0.7);
+  line-height: 23px;
   margin-top: 36px;
 }
 
@@ -1656,6 +1628,7 @@ input, textarea, .scompany {
   margin-left: 100px;
   font-family: Roboto;
   font-size: 20px;
+  padding-bottom: 80px;
 }
 
 .wrapper {
@@ -1694,25 +1667,6 @@ input, textarea, .scompany {
 
 .section-four .subtitle {
   margin-top: 30px;
-}
-
-h1 {
-  font-family: Yanone Kaffeesatz;
-  font-size: 52px;
-  line-height: 55px;
-  letter-spacing: 0.01em;
-  color: #041133;
-  opacity: 0.8;
-  font-weight: normal;
-}
-
-h3 {
-  font-family: Roboto;
-  font-weight: 500;
-  font-size: 22px;
-  line-height: 25px;
-  letter-spacing: 0.02em;
-  color: rgba(4, 17, 51, 0.7);
 }
 
 .text, .section-four {
@@ -1758,6 +1712,7 @@ h3 {
 .table {
   width: 846px;
   margin: 0 auto;
+  padding-bottom: 80px;
 }
 
 .table-form {
@@ -1818,6 +1773,7 @@ h3 {
 
 .requisites {
   text-align: center;
+  padding-bottom: 80px;
 }
 
 .requisites-wrapper {
@@ -1871,6 +1827,7 @@ h3 {
 .staff {
   text-align: center;
   margin: 0 auto;
+  padding-bottom: 80px;
 }
 
 .staff-wrapper {
