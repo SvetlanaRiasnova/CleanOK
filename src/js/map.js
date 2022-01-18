@@ -8,8 +8,10 @@
         });
         myMap.behaviors.disable('scrollZoom');
     
+
+        
 // масштабирование при нажатии на метку
-var myPlacemark0 = new ymaps.Placemark([48.489223, 135.062709]);
+const myPlacemark0 = new ymaps.Placemark([48.489223, 135.062709]);
   myPlacemark0.events.add("click", function(){
   myMap.setZoom( 15 );
   myMap.setCenter([48.489223, 135.062709]);
@@ -23,12 +25,12 @@ const myPlacemark = new ymaps.Placemark([53.035004, 158.662000]);
 const myPlacemark2 = new ymaps.Placemark([62.031828, 129.734945]);
 myPlacemark2.events.add("click", function(){
   myMap.setZoom(15);
-  myMap.setCenter([53.035004, 158.662000]);
+  myMap.setCenter([62.031828, 129.734945]);
 });
 const myPlacemark3 = new ymaps.Placemark([50.552464, 137.022528]);
 myPlacemark3.events.add("click", function(){
   myMap.setZoom(15);
-  myMap.setCenter([53.035004, 158.662000]);
+  myMap.setCenter([50.552464, 137.022528]);
 });
 
 
