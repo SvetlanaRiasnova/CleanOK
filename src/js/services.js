@@ -1,21 +1,19 @@
-function openService(evt, service) {
-  // Declare all variables
-  var i, tabcontent, tablinks;
+var jsTriggers = document.querySelectorAll('.tablinks'),
+    jsContents = document.querySelectorAll('.tabcontent');
 
-  // Get all elements with class="tabcontent" and hide them
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
+jsTriggers.forEach(function(trigger) {
+   trigger.addEventListener('click', function() {
+      var id = this.getAttribute('data-tab'),
+          content = document.querySelector('.tabcontent[data-tab="'+id+'"]'),
+          activeTrigger = document.querySelector('.tablinks.active'),
+          activeContent = document.querySelector('.tabcontent.active');
+      
+      activeTrigger.classList.remove('active'); 
+      trigger.classList.add('active'); 
+      
+      activeContent.classList.remove('active'); 
+      content.classList.add('active'); 
+    });
+});
 
-  // Get all elements with class="tablinks" and remove the class "active"
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
 
-  // Show the current tab, and add an "active" class to the link that opened the tab
-  document.getElementById(service).style.display = "grid";
-  evt.currentTarget.className += " active";
-}
-document.getElementById("defaultOpen").click();

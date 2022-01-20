@@ -126,33 +126,29 @@
       </h2>
       <div class="services__info">
         <div class="services__list">
-          <div
-            class="tablinks"
-            onclick="openService(event, 'service-one')"
-            id="defaultOpen"
-          >
+          <div class="tablinks active" data-tab="1">
             <div class="list-number">01</div>
             <div class="list-header">
               Содержание внутренних помещений и территорий
             </div>
           </div>
-          <div class="tablinks" onclick="openService(event, 'service-tow')">
+          <div class="tablinks" data-tab="2">
             <div class="list-number">02</div>
             <div class="list-header">
               Управление и эксплуатация коммерческой недвижимости и в сфере ЖКХ
             </div>
           </div>
-          <div class="tablinks" onclick="openService(event, 'service-three')">
+          <div class="tablinks" data-tab="3">
             <div class="list-number">03</div>
             <div class="list-header">Хозяйственное <br />обслуживание</div>
           </div>
-          <div class="tablinks" onclick="openService(event, 'service-four')">
+          <div class="tablinks" data-tab="4">
             <div class="list-number">04</div>
             <div class="list-header">
               Техническое обслуживание инженерных систем
             </div>
           </div>
-          <div class="tablinks" onclick="openService(event, 'service-five')">
+          <div class="tablinks" data-tab="5">
             <div class="list-number">05</div>
             <div class="list-header">
               Поддержка материально- технической базы
@@ -160,7 +156,7 @@
           </div>
         </div>
         <div class="services__content">
-          <div id="service-one" class="service-one tabcontent">
+          <div class="service-one tabcontent active" data-tab="1">
             <div>
               <div class="title-one">Ежедневная уборка</div>
               <div class="content-one">
@@ -202,7 +198,7 @@
               </a>
             </div>
           </div>
-          <div id="service-tow" class="service-tow tabcontent">
+          <div class="service-tow tabcontent" data-tab="2">
             <div class="service-tow__info">
               <div>
                 <div class="title-tow">Аварийно-восстановительные работы</div>
@@ -223,7 +219,7 @@
             </div>
             <div class="service-tow__img"></div>
           </div>
-          <div id="service-three" class="service-three tabcontent">
+          <div class="service-three tabcontent" data-tab="3">
             <div class="service-three__info">
               <div>
                 <div class="title-three">
@@ -250,7 +246,7 @@
             </div>
             <div class="service-three__img"></div>
           </div>
-          <div id="service-four" class="service-four tabcontent">
+          <div class="service-four tabcontent" data-tab="4">
             <div class="service-four__container">
               <span class="title-one">Обслуживаемые системы</span>
               <div class="service-four__wrapper">
@@ -316,7 +312,7 @@
               </div>
             </div>
           </div>
-          <div id="service-five" class="service-five tabcontent">
+          <div class="service-five tabcontent" data-tab="5">
             <div class="service-five__info">
               <div class="icon">
                 <img src="./icons/service5/parts.png" alt="parts" />
