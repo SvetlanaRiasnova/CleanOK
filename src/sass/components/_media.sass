@@ -91,9 +91,9 @@
         font-size: 14px
     .list-number
         font-size: 22px
-    // .services__content, .tabcontent
-    //     display: flex
-    //     margin: 0 auto
+    .services__content
+        display: flex
+        margin: 0 auto
     .slider-track, .slider-container, .certificates__wrapper
         width: 875px
         margin: 0 auto
@@ -101,6 +101,8 @@
         margin-top: 15%
 
 @media ( max-width: 835px )
+    .nav__burger
+        margin-right: 10px
     .intro__descr
         width: 50vw
     .intro__features
@@ -137,6 +139,7 @@
         row-gap: 5px
     .services__content, .tabcontent
         width: 80vw
+        margin: 0 auto
     .tabcontent
         padding-top: 0px
         margin-top: 0px
@@ -150,7 +153,7 @@
         width: 272px
         margin-top: 10px
     .service-three__img, .service-five__img, .service-tow__img
-        width: 280px
+        max-width: 280px
         position: relative
     .service-four
         margin-top: 0px
@@ -198,6 +201,8 @@
     .footer__contacts
     .modal
         width: 240px
-        height: 60%
+        height: 60vw
         .modal__contacts-text
-            margin-top: 25%
+            margin-top: 15%
+        .modal__burger-contacts
+            height: 40%
