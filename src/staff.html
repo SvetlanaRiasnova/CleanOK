@@ -4,9 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CLEANOK</title>
-    <link rel="stylesheet" href="./normalize.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/normalize.min.css" />
+    <link rel="stylesheet" href="./css/style.min.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap"
       rel="stylesheet"
@@ -21,7 +20,8 @@
     />
     <script src="./js/nav-float.js" defer></script>
     <script src="./js/modal.js" defer></script>
-    <script src="./js/scroll.js" defer></script>
+
+    <title>CLEANOK</title>
   </head>
   <body>
     <header class="header container">
@@ -59,8 +59,48 @@
         </div>
       </div>
     </header>
-    <div class="sended">
-      Спасибо за обращение! Мы свяжемся с вами в течении 15 минут!
+    <div class="staff container">
+      <h2 class="staff-title">Наши сотрудники</h2>
+      <div class="staff-wrapper">
+        <div class="staff-photo">
+          <img src="./img/Service2.jpg" alt="photo" class="staff-photo" />
+        </div>
+        <div class="staff-info">
+          <div class="staff-name">Имя Отчество Фамилия</div>
+          <!-- <div class="sername">Фамилия</div> -->
+          <div class="position">Должность</div>
+          <div class="staff-about">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse
+            molestias pariatur doloremque. Assumenda debitis reprehenderit
+            harum, est sed ducimus vel velit praesentium illo vitae accusantium
+            alias accusamus provident pariatur ipsa. Lorem ipsum dolor, sit amet
+            consectetur adipisicing elit. Esse molestias pariatur doloremque.
+            Assumenda debitis reprehenderit harum, est sed ducimus vel velit
+            praesentium illo vitae accusantium alias accusamus provident
+            pariatur ipsa.
+          </div>
+        </div>
+      </div>
+      <div class="staff-wrapper">
+        <div class="staff-photo">
+          <img src="./img/Service2.jpg" alt="photo" class="staff-photo" />
+        </div>
+        <div class="staff-info">
+          <div class="staff-name">Имя Отчество Фамилия</div>
+          <!-- <div class="sername">Фамилия</div> -->
+          <div class="position">Должность</div>
+          <div class="staff-about">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse
+            molestias pariatur doloremque. Assumenda debitis reprehenderit
+            harum, est sed ducimus vel velit praesentium illo vitae accusantium
+            alias accusamus provident pariatur ipsa. Lorem ipsum dolor, sit amet
+            consectetur adipisicing elit. Esse molestias pariatur doloremque.
+            Assumenda debitis reprehenderit harum, est sed ducimus vel velit
+            praesentium illo vitae accusantium alias accusamus provident
+            pariatur ipsa.
+          </div>
+        </div>
+      </div>
     </div>
     <footer class="footer">
       <div class="footer__wrapper container">
@@ -99,33 +139,12 @@
           </li>
         </ul>
       </div>
-      <div class="divider"><hr /></div>
       <div class="modal__burger-contacts">
+        <div class="divider"><hr /></div>
         <p class="modal__contacts-text">Единая справочная служба</p>
-        <p class="modal__contacts-phone">8 800 333 99 09</p>
-      </div>
-      <div class="nav">
-        <ul class="nav__burger-list">
-          <li class="nav__item">
-            <a href="./staff.html" class="nav__link link">Сотрудники</a>
-          </li>
-          <li class="nav__item">
-            <a href="./textpage.html" class="nav__link link">О компании</a>
-          </li>
-          <li class="nav__item">
-            <a href="./requisites.html" class="nav__link link">Реквизиты</a>
-          </li>
-          <li class="nav__item">
-            <a href="./textpage.html" class="nav__link link"
-              >Еще одна страница</a
-            >
-          </li>
-        </ul>
-      </div>
-      <div class="divider"><hr /></div>
-      <div class="nav__burger-contacts">
-        <p class="modal__contacts_text">Единая справочная служба</p>
-        <p class="modal__contacts_phone">8 800 333 99 09</p>
+        <a href="tel:+78003339909" class="modal__contacts-phone link"
+          >8 800 333 99 09</a
+        >
       </div>
     </div>
   </body>

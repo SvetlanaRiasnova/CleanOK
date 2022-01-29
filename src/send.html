@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./normalize.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <title>CLEANOK</title>
+    <link rel="stylesheet" href="./css/normalize.min.css" />
+    <link rel="stylesheet" href="./css/style.min.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap"
       rel="stylesheet"
@@ -20,8 +21,7 @@
     />
     <script src="./js/nav-float.js" defer></script>
     <script src="./js/modal.js" defer></script>
-
-    <title>CLEANOK</title>
+    <script src="./js/scroll.js" defer></script>
   </head>
   <body>
     <header class="header container">
@@ -59,22 +59,8 @@
         </div>
       </div>
     </header>
-    <div class="requisites container">
-      <h2 class="requisites-title">Наши реквизиты</h2>
-      <div class="requisites-wrapper">
-        <div class="requisites-content">
-          <div class="requisites-name">Наименование организации:</div>
-          <div class="requisites-name own">ООО «Клин Ок»</div>
-          <div class="requisites-inn">ИНН</div>
-          <div class="requisites-inn own">00000000000</div>
-          <div class="requisites-bank">Наименование банка</div>
-          <div class="requisites-bank own">АО Банк</div>
-          <div class="requisites-bic">БИК банка</div>
-          <div class="requisites-bic own">0000000000</div>
-          <div class="requisites-bic">р/с</div>
-          <div class="requisites-bic own">407000000000000000000</div>
-        </div>
-      </div>
+    <div class="sended">
+      Спасибо за обращение! Мы свяжемся с вами в течении 15 минут!
     </div>
     <footer class="footer">
       <div class="footer__wrapper container">
@@ -113,10 +99,12 @@
           </li>
         </ul>
       </div>
-      <div class="divider"><hr /></div>
       <div class="modal__burger-contacts">
+        <div class="divider"><hr /></div>
         <p class="modal__contacts-text">Единая справочная служба</p>
-        <p class="modal__contacts-phone">8 800 333 99 09</p>
+        <a href="tel:+78003339909" class="modal__contacts-phone link"
+          >8 800 333 99 09</a
+        >
       </div>
     </div>
   </body>

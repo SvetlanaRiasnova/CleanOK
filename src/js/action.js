@@ -10,8 +10,7 @@ function submitForm(evt) {
     const loginTelRegEx = /^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$/;
     const isTelValid = loginTelRegEx.test(loginTel.value);
     const isNameValid = clientName.value.length > 1 && clientName.value.trim() !== "";
-    // loginTel.mask("+79999999999");
-    // evt.preventDefault();
+    
             if (isTelValid) {
             loginTel.classList.remove("invalid");
             errorTel.classList.add("hidden");
@@ -30,8 +29,7 @@ function submitForm(evt) {
                 errorName.classList.remove("hidden");
                 
             };
-            // clientName.value = "";
-            // loginTel.value = "";
+            
         };
 
 sendBtn.addEventListener("click", submitForm);

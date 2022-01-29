@@ -37,13 +37,11 @@
     letter-spacing: 0.02em
     color: $dark-text
     opacity: 0.4
-.services__list .active
-    .list-number
+.tablinks.active
+    .list-number, .list-header
         color: $dark-blue
         opacity: 1
-    .list-header
-        color: $dark-blue
-        opacity: 1
+
 .services__content
     width: 807px
     min-height: 390px
@@ -61,11 +59,13 @@
     width: 303px
     align-items: center
 .tabcontent
-    opacity: 0; /*Элемент полностью прозрачный (невидимый)*/
-    transition: .01s; /*Скорость перехода состояния элемента*/
-    animation: show 1s 1; /* Указываем название анимации, её время и количество повторов*/
-    animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
-
+    display: none
+    opacity: 0 /*Элемент полностью прозрачный (невидимый)*/
+    transition: .01s /*Скорость перехода состояния элемента*/
+    animation: show 1s 1 /* Указываем название анимации, её время и количество повторов*/
+    animation-fill-mode: forwards /* Чтобы элемент оставался в конечном состоянии анимации */
+.tabcontent.active
+    display: grid
 @keyframes show
     0%
         opacity: 0

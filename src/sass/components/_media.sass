@@ -1,44 +1,4 @@
-// // @media  (max-width: 1990px)
-// //     .intro
-// //         column-gap: 200px
-// //     .offices
-// //         max-width: 100%
-// //         margin-left: 0px
-// //         .search
-// //             left: 1350px
-// //     // .header__container, .fixed
-// //     //     margin: 0 auto
-// //     //     width: 100%
-// //     // .fixed
-// //     //     width: 1920px
-// //     //     margin-left: 0px
-// @media  (min-width: 1500px)
-//     .container
-//         width: 99vw
-//     .header__container
-//         margin: 0
-//     .intro__image
-//         width: 99%
-//     .intro
-//         column-gap: 0px
-//     .clients__logo
-//         width: 1000px
-//         padding: 0 40px
-//         margin: 0 auto
-//         margin-top: 50px
-//     .offices
-//         max-width: 100%
-//         margin-left: 0px
-//         .search
-//             left: 1150px
-//     .fixed
-//         margin: 0 auto
-//         width: 99vw
-//         justify-content: space-between
-//     .header__btn-float
-//         margin-left: 0px
-//     .map
-//         width: 99wv
+
 @media  (max-width: 1440px)
     .container
         width: 99vw
@@ -49,7 +9,7 @@
     .fixed
         margin: 0
         justify-content: space-between
-    .clients__logo
+    .clients__logos
         width: 1000px
         padding: 0 40px
         margin: 0 auto
@@ -63,7 +23,8 @@
         width: 99vw
     .intro__image
         width: 100%
-    .clients__logo
+        overflow: hidden
+    .clients__logos
         width: 1000px
         padding: 0 40px
         margin: 0 auto
@@ -77,27 +38,11 @@
         justify-content: space-between
     .header__btn-float
         margin-left: 280px
-@media ( max-width: 1290px )
-    .container
-        max-width: 100%
-    .intro__image
-        width: 100%
-    .intro__descr
-        margin-left: 50px
-    .offices
-        max-width: 100%
-        margin-left: 0px
-    .action
-        margin-left: 0px
-    .fixed
+    .slider-track, .slider-container, .certificates__wrapper
+        width: 875px
         margin: 0 auto
-        width: 100%
-        justify-content: space-between
-    .header__btn-float
-        margin-left: 0px
+
 @media ( max-width: 1030px )
-    .container
-        max-width: 100%
     .intro__descr
         margin-top: 50px
     .intro__features
@@ -108,15 +53,14 @@
     .intro__image
         width: 100%
         overflow: hidden
-        margin-top: 10px
     .fixed
         max-width: 1024px
-        justify-content: space-evenly
+        justify-content: space-between
         margin-left: 0px
     .header__btn-float
         margin-left: 240px
-    .clients__logo
-        width: 100vw
+    .clients__logos
+        width: 80vw
         padding: 0 40px
         margin: 0 auto
         margin-top: 50px
@@ -150,22 +94,26 @@
         font-size: 14px
     .list-number
         font-size: 22px
-    .services__content, .tabcontent
+    .services__content
         display: flex
         margin: 0 auto
     .slider-track, .slider-container, .certificates__wrapper
         width: 875px
         margin: 0 auto
+
     .modal__contacts-text
         margin-top: 15%
-@media ( max-width: 835px )
+
+@media ( max-width: 890px )
+    .nav__burger
+        margin-right: 10px
     .intro__descr
         width: 50vw
     .intro__features
-        width: 90vw
+        width: 50vw
         margin-top: 85px
-        display: inline-flex
-        grid-column-gap: 50px
+        display: grid
+        grid-column-gap: 10px
     .offices
         max-width: 100%
         margin-left: 0px
@@ -195,6 +143,7 @@
         row-gap: 5px
     .services__content, .tabcontent
         width: 80vw
+        margin: 0 auto
     .tabcontent
         padding-top: 0px
         margin-top: 0px
@@ -208,7 +157,7 @@
         width: 272px
         margin-top: 10px
     .service-three__img, .service-five__img, .service-tow__img
-        width: 280px
+        max-width: 280px
         position: relative
     .service-four
         margin-top: 0px
@@ -224,8 +173,13 @@
     .slider-track, .slider-container, .certificates__wrapper
         width: 600px
         margin: 0 auto
+    .slider-item
+        min-width: 243px
+        min-height: 228px
     .search
         right: 50px
+        .cities
+            margin-top: -10px
         .search-info__content
             flex-direction: column
             margin-top: 0
@@ -236,8 +190,10 @@
     .cities-phone
         font-size: 10px
     .fixed
-        position: inherit
-        width: 80vw
+        max-width: 99vw
+        margin-left: 0px
+        .header__btn-float
+            margin-left: 10px
     .search, .cities
         width: 250px
     .action
@@ -249,9 +205,12 @@
         margin-left: 0px
     .footer__info
         width: 200px
-    .footer__contacts
+    .footer__contacts, .footer__info
+        margin: 60px auto
     .modal
         width: 240px
-        height: 60%
+        height: 60vw
         .modal__contacts-text
-            margin-top: 25%
+            margin-top: 15%
+        .modal__burger-contacts
+            height: 40%
