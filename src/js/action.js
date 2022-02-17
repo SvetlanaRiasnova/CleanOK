@@ -5,7 +5,6 @@ sendBtn = document.querySelector(".action__btn"),
 clientName = document.querySelector(".sname"),
 errorName = document.querySelector(".error-name");
 
-
 function submitForm(evt) {
     const loginTelRegEx = /^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$/;
     const isTelValid = loginTelRegEx.test(loginTel.value);
@@ -27,9 +26,7 @@ function submitForm(evt) {
                 evt.preventDefault();  
                 clientName.classList.add("invalid");
                 errorName.classList.remove("hidden");
-                
-            };
-            
+            };            
         };
 
 sendBtn.addEventListener("click", submitForm);
