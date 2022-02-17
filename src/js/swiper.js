@@ -1,4 +1,3 @@
-
 	let position = 0;
 	const slidesToShow = 4;
 	const slidesToScroll = 1;
@@ -16,17 +15,13 @@
 		item.style.minWidth = `${itemWidth}px`;
 	});
 
-	
 	btnNext.addEventListener("click", () => {
-		// const itemsLeft = itemsCount - (Math.abs(position) + slidesToShow * itemWidth) / itemWidth;
-		// alert(itemsLeft);
 		position -= movePosition  + gap;
 		setPosition();
 		checkBtns ();
 	});
 
 	btnPrev.addEventListener("click", () => {
-		// const itemsLeft = Math.abs(position) / itemWidth;
 		position += movePosition + gap;
 		
 		setPosition();

@@ -143,21 +143,21 @@
         ymaps.ready(int);
         function int() {
             
-            var arr = [
+            let arr = [
                 "Хабаровск",
                 "Петропавловск-Камчатский",
                 "Якутск",
                 "Комсомольск-на-Амуре"
                 ];
-        var find = function (arr, find) {
+        let find = function (arr, find) {
                 return arr.filter(function (value) {
                     return (value + "").toLowerCase().indexOf(find.toLowerCase()) != -1;
                 });
             };
 
-        var myProvider = {
+        let myProvider = {
             suggest: function (request, options) {
-                var res = find(arr, request),
+                let res = find(arr, request),
                     arrayResult = [],
                     results = Math.min(options.results, res.length);
                 for (var i = 0; i < results; i++) {
@@ -166,5 +166,5 @@
                 return ymaps.vow.resolve(arrayResult);
             }
         }
-        var suggestView = new ymaps.SuggestView('suggest', {provider: myProvider, results: 1});
+        let suggestView = new ymaps.SuggestView('suggest', {provider: myProvider, results: 1});
                     }};
