@@ -23,21 +23,17 @@
 
 	btnPrev.addEventListener("click", () => {
 		position += movePosition + gap;
-		
 		setPosition();
 		checkBtns ();
-		
 	});
 
 	const setPosition = () => {
 		track.style.transform = `translateX(${position}px)`;
-		
 	};
 
 	const checkBtns = () => {
 		btnPrev.disabled = position === 0;
-		btnNext.disabled = position<= - (itemsCount - slidesToShow) * itemWidth;
-		
+		btnNext.disabled = position<= - (itemsCount - slidesToShow) * itemWidth;	
 	};
 
 	checkBtns ();

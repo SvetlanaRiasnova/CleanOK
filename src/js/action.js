@@ -16,8 +16,7 @@ function submitForm(evt) {
             } else {
                 evt.preventDefault();  
                 loginTel.classList.add("invalid");
-                errorTel.classList.remove("hidden");
-                
+                errorTel.classList.remove("hidden");                
             }
             if (isNameValid) {
             clientName.classList.remove("invalid");

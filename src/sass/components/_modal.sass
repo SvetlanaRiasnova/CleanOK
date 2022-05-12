@@ -1,34 +1,27 @@
 .modal
     display: flex
     flex-direction: column
+    justify-content: space-between
     width: 360px
-    height: 90%
-    max-height: 780px
+    height: calc(100vh - 50px)
     top: 50px
     right: 0
     position: fixed
     z-index: 2
     background: #FFFFFF
     box-shadow: 0px 0px 11px rgba(4, 17, 51, 0.11)
-
-.divider
-    color: #E0E3F0
-    opacity: 0.3
-
 .nav__burger-list
-    margin-top: 45px
+    padding-top: 45px
     display: grid
     grid-template-columns: 1fr
     grid-row-gap: 20px
     list-style: none
     .link
         cursor: pointer
-
 .modal__burger-contacts
-    margin-top: 240px
+    padding: 40px 0
+    border-top: 1px solid #E0E3F0
     text-align: center
-.modal__contacts-text
-    margin-top: 30%
 .modal__contacts-phone
     font-size: 16px
 .modal-fon

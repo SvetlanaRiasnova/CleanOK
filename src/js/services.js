@@ -3,7 +3,7 @@ const jsTriggers = document.querySelectorAll('.tablinks'),
 
 jsTriggers.forEach(function(trigger) {
     trigger.addEventListener('click', function() {
-        let id = this.getAttribute('data-tab'),
+        const id = this.getAttribute('data-tab'),
             content = document.querySelector('.tabcontent[data-tab="'+id+'"]'),
             activeTrigger = document.querySelector('.tablinks.active'),
             activeContent = document.querySelector('.tabcontent.active');

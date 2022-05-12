@@ -10,7 +10,7 @@ function showModal() {
 }
 
     document.addEventListener('keydown', function(evt) {
-        if (evt.keyCode === 27) {
+        if (evt.keydown === 27) {
         modalWindow.classList.add("hidden");
         modalFon.classList.toggle("hidden");
         }
