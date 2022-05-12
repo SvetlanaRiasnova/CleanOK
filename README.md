@@ -1,6 +1,6 @@
 # CleanOK
 
-Проект выполнен самостоятельно, в качестве итоговой работы в рамках курса "Frontend-разработчик" "Fogstream - академия".
+Проект выполнен самостоятельно, в качестве итоговой работы в рамках курса "Frontend-разработчик"  в "Fogstream Academy" г. Хабаровск.
 
 Дизайн-прокет предоставлен заказчиком https://www.figma.com/proto/NNwLfDvXbjszDsTCLjvf8q/CleanOk-B2B?node-id=56%3A17&viewport=1053%2Cнашла-792%2C1.3388878107070923&scaling=min-zoom
 
