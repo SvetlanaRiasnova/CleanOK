@@ -56,10 +56,10 @@
     align-items: center
 .tabcontent
     display: none
-    opacity: 0 /*Элемент полностью прозрачный (невидимый)*/
-    transition: .01s /*Скорость перехода состояния элемента*/
-    animation: show 1s 1 /* Указываем название анимации, её время и количество повторов*/
-    animation-fill-mode: forwards /* Чтобы элемент оставался в конечном состоянии анимации */
+    opacity: 0
+    transition: .01s
+    animation: show 1s 1
+    animation-fill-mode: forwards
 .tabcontent.active
     display: grid
 @keyframes show

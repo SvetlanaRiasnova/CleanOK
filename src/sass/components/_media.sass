@@ -4,9 +4,9 @@
     .intro__image
         max-width: 100%
     .fixed
-        margin: 0
-        justify-content: space-between
-        width: 100vw
+        // margin: 0
+        // justify-content: space-between
+        // width: 100vw
     .clients__logos
         width: 1000px
         padding: 0 40px
@@ -46,6 +46,12 @@
         margin: 0 auto
 
 @media ( max-width: 1030px )
+    .fixed
+        justify-content: space-evenly
+    .header__btn-float
+        margin: 0 0 0 15px
+        font-size: 10px
+        min-width: 100px
     .intro__descr
         margin-top: 50px
     .intro__features
@@ -56,14 +62,6 @@
     .intro__image
         width: 100%
         overflow: hidden
-    .fixed
-        max-width: 1024px
-        justify-content: space-between
-        margin-left: 0px
-    .header__btn-float
-        margin-left: 240px
-        font-size: 10px
-        min-width: 100px
     .clients__logos
         width: 80vw
         padding: 0 40px
@@ -116,9 +114,6 @@
         margin-top: 85px
         display: grid
         grid-column-gap: 10px
-    .offices
-        max-width: 100%
-        margin-left: 0px
     .intro__image
         width: 100%
         margin-top: -50px
@@ -178,6 +173,9 @@
     .slider-item
         min-width: 243px
         min-height: 228px
+    .offices
+        max-width: 100%
+        margin-left: 0px
     .search
         right: 50px
         .cities
@@ -191,11 +189,8 @@
         font-size: 10px
     .cities-phone
         font-size: 10px
-    .fixed
-        max-width: 99vw
-        margin-left: 0px
-        .header__btn-float
-            margin-left: 10px
+    .header .fixed
+        margin: 0 0
     .search, .cities
         width: 250px
     .action

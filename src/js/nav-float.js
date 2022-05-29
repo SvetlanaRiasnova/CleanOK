@@ -1,10 +1,10 @@
-const floatNav = document.querySelector('.header__container');
+const floatNav = document.querySelector('.header');
 const floatBtn = document.querySelector('.header__btn-float');
 const bodyPos = document.querySelector('.intro');
-window.addEventListener('scroll', function (e) {
-    e.preventDefault();
+
+window.addEventListener('scroll', function () {
 	const scrollCount = document.documentElement.scrollTop;
-    if (scrollCount > 60) {
+    if (scrollCount > 50) {
         floatNav.classList.add('fixed');
         floatBtn.classList.remove('hidden');
         bodyPos.classList.add('move');
